@@ -1,0 +1,60 @@
+body {
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 12px;
+}
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
+span.form-value {
+    border-bottom: 1px solid black;
+}
+div.form-value {
+    display: inline;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.table-75 {
+    width: 75%;
+}
+.table-100 {
+    width: 100%;
+}
+.cell-2 {
+    width: 40%;
+}
+.cell-3 {
+    width: 25%;
+}
+.how-did-you-hear {
+    border: 1px solid black;
+    padding: 10px;
+}
+span.signature-typed {
+    font-family: 'Cookie';
+    font-size: 20px;
+}
+.table-underline td:nth-child(2) {
+    border-bottom: 1px solid black;
+}
+
+.table-underline td:nth-child(5) {
+    border-bottom: 1px solid black;
+}
+
+.table-underline td:nth-child(8) {
+    border-bottom: 1px solid black;
+}
+.text-center {
+    text-align: center;
+}

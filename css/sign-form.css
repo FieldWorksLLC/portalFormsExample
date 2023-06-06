@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Cookie";
+    src: url("/fonts/Cookie-Regular.ttf");
+}
+@font-face {
+    font-family: "HerrVon";
+    src: url("/fonts/HerrVonMuellerhoff-Regular.ttf");
+}
+
+/* general */
+.max-100 {max-width: 100px;}
+.max-125 {max-width: 125px;}
+.loader {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+}
+.loader img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/*sign form form*/
+.sign-form legend {
+    padding: 20px;
+}
+
+.sign-form legend p.legend-heading {
+    font-weight: bold;
+}
+.sign-form legend p.legend-sub-heading {
+    font-size: .8em;
+}
+.sign-form label, .sign-form input, .sign-form select, .sign-form textarea {
+    font-size: .8em;
+}
+.sign-form .col-form-label {
+}
+
+.sign-form input:required,
+.sign-form .is-invalid,
+.sign-form textarea:required,
+.sign-form select:required {
+    background: #ffff7f42;
+}
+.sign-form .just-validate-success-field {
+    background: unset !important;
+}
+
+input.form-control.textfield_underline {
+    /*background: none;*/
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: unset;
+    padding: 5px 5px 0px 5px;
+}
+.row {
+    margin: 10px 0 10px 0;
+}
+.input-area-code {
+    width: 215px;
+    max-height: 40px;
+}
+.input-group-hear-about-us {
+    margin-top: -60px;
+    border: 1px solid #808080;
+    padding: 10px;
+    border-radius: 2px;
+    position: absolute;
+    right: 22%;
+    width: 340px;
+}
+
+/*signature collector*/
+.signature-collector-dialog .ui-dialog-buttonpane {
+    border: none;
+}
+.signature-collector {
+    margin: unset !important;
+    padding: unset !important;
+    min-height: 200px !important;
+}
+.signature-collector-header {
+    border-bottom: 1px solid #e6e6e6;
+}
+.signature-collector .icon-container {
+    width: 80px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+.signature-collector .icon-container span {
+    font-size: 12px;
+    color: #555;
+}
+.signature-collector .icon-container i {
+    font-size: 1.2em;
+    color: #555;
+}
+.signature-collector-input-container {
+    height: 100px;
+    /*overflow: hidden;*/
+}
+.signature-collector-input-container .signature-input {
+    font-family: "HerrVon";
+    font-size: 60px;
+    text-indent: 40px;
+    border: none !important;
+    background: transparent;
+    text-align: center;
+}
+.signature-collector .icon-container.icon-focused {
+    border-bottom: 1px solid gray;
+}
+.signature-collector .sig-pad {
+    width: auto;
+}
+.signature-collector .sigWrapper {
+    height: auto;
+    border: unset;
+}
+.signature-collector-input-container .signature-input::placeholder {
+    color: #acacac;
+    font-size: .5em;
+    font-family: sans-serif;
+    font-style: italic;
+}
+.signature-collector-input-container .signature-input:active,
+.signature-collector-input-container .signature-input:focus {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+.bi-signature-tag {
+    position: absolute;
+    bottom: 55px;
+    z-index: 9;
+}
+.bi-signature-tag:before {
+    transform: rotate(226deg);
+    font-size: 55px;
+    color: #df4141;
+}
+.signature-line {
+    /*overflow: hidden;*/
+}
+.signature-line hr {
+    margin-top: -35px;
+    border: 1px solid #1473e691;
+    opacity: 1;
+}
+.signature-collector-dialog {
+    max-width: 100%;
+}
+.signature-collector-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: unset !important;
+}
+.signature-collector-dialog button {
+    font-size: 12px !important;
+}
+.signature-collector-dialog button.btn-dialog-close {
+    background: transparent !important;
+    border: none !important;
+    text-decoration: underline;
+    padding: 5px;
+}
+.signature-collector-dialog button.btn-dialog-accept {
+    float: right;
+    background: #1473e6;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #1473e6;
+    padding: 5px 7px;
+    margin: 0 5px;
+}
+input.btn-agree-accept {
+    background: #1473e6;
+    color: #fff;
+    border: 1px solid #1473e6;
+    border-radius: 3px;
+    padding: 5px 7px;
+    margin: 0 5px;
+}
+
+.signature-collector-dialog button.btn-dialog-clear {
+    float: right;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #777;
+    padding: 5px 7px;
+    margin: 0 5px;
+}
+.signature-display-typed {
+    font-family: 'HerrVon';
+    font-size: 2.1em;
+    position: absolute;
+    top: -7px;
+    left: 55px;
+}
+.signature-display-draw {
+    position: absolute;
+    top: -8px;
+    max-width: 320px;
+}
+.signature-complete {
+    border-bottom: 1px solid #eaeaea;
+}
+
+/*verification page*/
+input.input-num-verify {
+    padding: 2px;
+    margin: 2px;
+    font-size: 1.3em;
+    max-height: 70px;
+    max-width: 60px;
+}
+
+@media (max-width: 1270px) {
+    .input-group-hear-about-us {
+        position: relative;
+        margin-top: unset;
+        right: unset;
+    }
+}
+@media (max-width: 768px) {
+    .input-group-hear-about-us {
+        margin-top: unset;
+        position: unset;
+    }
+    .company-name {text-align: center}
+    .signature-collector-input-container {
+        height: 115px;
+        overflow: hidden;
+    }
+}
+@media (max-width: 375px) {
+    .mobile-375 {display: block;}
+    .mobile-hide-375 {display: none;}
+}
+@media (min-width: 375px) {
+    body.page-sign-form .container {
+        width: unset;
+    }
+    .mobile-hide-375 {display: block;}
+    .mobile-375 {display: none;}
+}
