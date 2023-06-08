@@ -23,7 +23,7 @@
 
 /*sign form form*/
 .sign-form legend {
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .sign-form legend p.legend-heading {
@@ -32,10 +32,14 @@
 .sign-form legend p.legend-sub-heading {
     font-size: .8em;
 }
-.sign-form label, .sign-form input, .sign-form select, .sign-form textarea {
-    font-size: .8em;
+.sign-form label .main, .sign-form input, .sign-form select, .sign-form textarea {
+    font-size: 1.1em;
+    font-weight: bold;
 }
-.sign-form .col-form-label {
+
+.sign-form label .main {
+    display: inline-block;
+    margin-bottom: 5px !important;
 }
 
 .sign-form input:required,
@@ -53,7 +57,7 @@ input.form-control.textfield_underline {
     border: none;
     border-bottom: 1px solid black;
     border-radius: unset;
-    padding: 5px 5px 0px 5px;
+    padding: 0px 5px 0px 5px;
 }
 .row {
     margin: 10px 0 10px 0;

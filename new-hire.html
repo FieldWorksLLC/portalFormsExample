@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="meta description goes here">
+  <meta name="keywords" content="meta,keywords,go,here">
+  <meta name="ROBOTS" content="INDEX,FOLLOW">
+
+  <link href="/css/bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/bootstrap5/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="/css/forms.css">
+  <link rel="stylesheet" href="/css/sign-form-pdf.css">
+  <link rel="stylesheet" href="/css/sign-form.css">
+
+  <script src="/js/bootstrap5/bootstrap.bundle.min.js"></script>
+  <script src="/js/bootstrap5/bootstrap.min.js"></script>
+
+</head>
+
+<body class="page-sign-form page-sign-form-application forms-self-service">
+  <div class="container">
+    <div class="row">
+      <form class="sign-form form form-inline container-paper" style="padding: 3em;" method="post">
+        <input type="hidden" name="form_key" id="form_key"
+          value="2e28735d1ad88e2bde84514011074310" /><!--    <input type="hidden" name="debug" id="debug" value="debug"/>-->
+        <input type="hidden" name="form_entity_id" value="1" />
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="">
+            <fieldset>
+              <legend>
+                <p class="legend-heading">New Hire Information</p>
+              </legend>
+            </fieldset>
+          </div>
+          <div class="">
+            <fieldset>
+              <p>Fieldworks, LLC.</p>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column gap-5">
+          <fieldset class="mt-5 !important d-flex flex-column gap-4">
+            <div>
+              <div class="d-flex gap-4">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" name="firstname" id="firstname">
+                  <label for="firstname">First Legal Name</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control"  name="middlename" id="middlename">
+                  <label for="middlename">Middle Legal Name</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control"  name="lastname" id="lastname">
+                  <label for="lastname">Last Legal Name</label>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-4 align-items-end">
+              <label for="preferred-name">Preferred First Name if Not Legal Name:</label>
+              <input autocomplete="off" id="prefered-name" name="preferred-name" type="text" placeholder=""
+                class="form-control textfield_underline">
+            </div>
+            <div class="d-flex gap-5 align-items-end">
+              <div class="d-flex gap-3 align-items-center">
+                <label for="proxy-id-no">Did Someone on Staff Refer You?</label>
+                <div class="d-flex gap-2">
+                  <div>
+                    <input type="radio" name="staff-refer" id="staff-refer-yes" class="form-check-input">
+                    <label for="staff-refer-yes" class="form-check-label">Yes</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="staff-refer" id="staff-refer-no" class="form-check-input">
+                    <label for="staff-refer-no" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex gap-4 align-items-end">
+                <label for="referrer-name" class="" style="width: 200px">Name Of Referrer:</label>
+                <input autocomplete="off" id="referrer-name" name="referrer-name" type="text"
+                  class="form-control textfield_underline pt-0">
+              </div>
+            </div>
+          </fieldset>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex flex-column gap-2">
+              <h2>Optional Invitation to Self-Identify</h2>
+              <h3 class="text-decoration-underline !important">Anti-Discrimination Notice:</h3>
+              <p style="max-width: 800px;">It is an unlawful employment practice for an employer to fail or refuse to hire or discharge any individual, or otherwise to discriminate against any individual with respect to that individual’s terms and conditions of employment, because of such individual’s race, color, religion, sex, or national origin.</p>
+            </div>
+            <div class="d-flex gap-4">
+              <div class="d-flex align-items-center gap-2">
+                <label for="race">Race:</label>
+                <select name="race" id="race"  class="form-select" style="width: 100px;">
+                  <option value=""></option>
+                  <option value="">White</option>
+                  <option value="">Black or African American</option>
+                  <option value="">Native American</option>
+                  <option value="">Hispanic</option>
+                  <option value="">Asian</option>
+                </select>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender"  class="form-select" style="width: 100px;">
+                  <option value=""></option>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <div  class="d-flex flex-column gap-2">
+              <h2>Contact & Emergency Contact Information</h2>
+              <h3 class="text-decoration-underline !important">Confirm Best Contact Information:</h3>
+              <p style="max-width: 800px;">Please provide the best contact phone numbers and emails that FieldWorks may use to contact you with important announcements, or changes around your work schedule, including phone calls, automated voice messages, and SMS text messages.</p>
+            </div>
+            <div class="d-flex gap-4 align-items-end">
+              <label for="phone">Cell Phone Number: </label>
+              <input autocomplete="off" id="phone" name="phone" type="text"
+                class="form-control textfield_underline">
+            </div>
+            <div class="d-flex gap-5 align-items-end">
+              <div class="d-flex gap-4 align-items-end">
+                <label for="other-phone" style="width: 240px">Other Phone Number: </label>
+                <input autocomplete="off" id="other-phone" name="other-phone" type="text" placeholder=""
+                  class="form-control textfield_underline">
+              </div>
+              <div class="d-flex gap-4 align-items-end">
+                <label for="email" class="" type="">Email:</label>
+                <input autocomplete="off" id="email" name="email" type="email" placeholder=""
+                  class="form-control textfield_underline">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

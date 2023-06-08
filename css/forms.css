@@ -15,7 +15,15 @@
 }
 
 h1, h2, h3, h4 {
-    font-family: "Poppins";
+    /* font-family: "Poppins", 'sans-serif'; */
+}
+
+input[type="radio"] {
+    border: 1px solid  #000;
+}
+
+.col-form-label  {
+    font-weight: bold;
 }
 
 .logo {
@@ -88,4 +96,12 @@ body.forms-self-service .accept-signature-consent button {
     border: unset;
     padding: 5px 8px;
     border-radius: 3px;
+}
+
+input[type="text"], input[type="email"] {
+    max-width: 300px;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
