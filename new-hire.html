@@ -23,11 +23,11 @@
 <body class="page-sign-form page-sign-form-application forms-self-service">
   <div class="container">
     <div class="row">
-      <form class="main sign-form form form-inline container-paper p-3 p-md-5" method="post">
+      <form class="p-3 main sign-form form form-inline container-paper p-md-5" method="post">
         <input type="hidden" name="form_key" id="form_key"
           value="2e28735d1ad88e2bde84514011074310" /><!--    <input type="hidden" name="debug" id="debug" value="debug"/>-->
         <input type="hidden" name="form_entity_id" value="1" />
-        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div class="flex-wrap gap-2 d-flex justify-content-between align-items-center">
           <div class="">
             <fieldset>
               <legend>
@@ -42,10 +42,10 @@
           </div>
         </div>
 
-        <div class="d-flex flex-column gap-6">
+        <div class="gap-6 d-flex flex-column">
           <fieldset class="mt-5 !important d-flex flex-column gap-4">
             <div>
-              <div class="d-flex gap-4 flex-wrap">
+              <div class="flex-wrap gap-4 d-flex">
                 <div class="">
                   <label for="firstname" class="mb-2">First Legal Name</label>
                   <input type="text" class="form-control textfield_underline" name="firstname" id="firstname">
@@ -60,15 +60,15 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex gap-md-4 gap-2 flex-wrap align-items-end">
+            <div class="flex-wrap gap-2 d-flex gap-md-4 align-items-end">
               <label for="preferred-name" class="mr-5">Preferred First Name if Not Legal Name:</label>
               <input autocomplete="off" id="prefered-name" name="preferred-name" type="text" placeholder=""
                 class="form-control textfield_underline">
             </div>
-            <div class="d-flex gap-md-5 gap-4 align-items-end flex-wrap">
-              <div class="d-flex gap-3 align-items-center flex-wrap">
+            <div class="flex-wrap gap-4 d-flex gap-md-5 align-items-end">
+              <div class="flex-wrap gap-3 d-flex align-items-center">
                 <label for="proxy-id-no">Did Someone on Staff Refer You?</label>
-                <div class="d-flex gap-2">
+                <div class="gap-2 d-flex">
                   <div>
                     <input type="radio" name="staff-refer" id="staff-refer-yes" class="form-check-input">
                     <label for="staff-refer-yes" class="form-check-label">Yes</label>
@@ -79,15 +79,15 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex gap-md-4 gap-2 align-items-end flex-wrap">
+              <div class="flex-wrap gap-2 d-flex gap-md-4 align-items-end">
                 <label for="referrer-name" class="">Name Of Referrer:</label>
                 <input autocomplete="off" id="referrer-name" name="referrer-name" type="text"
-                  class="form-control textfield_underline pt-0">
+                  class="pt-0 form-control textfield_underline">
               </div>
             </div>
           </fieldset>
-          <div class="d-flex flex-column gap-4">
-            <div class="d-flex flex-column gap-3">
+          <div class="gap-4 d-flex flex-column">
+            <div class="gap-3 d-flex flex-column">
               <h2>Optional Invitation to Self-Identify</h2>
               <h3 class="text-decoration-underline !important">Anti-Discrimination Notice:</h3>
               <p style="max-width: 800px;">It is an unlawful employment practice for an employer to fail or refuse to
@@ -95,8 +95,8 @@
                 that individual’s terms and conditions of employment, because of such individual’s race, color,
                 religion, sex, or national origin.</p>
             </div>
-            <div class="d-flex gap-md-4 gap-2 flex-wrap">
-              <div class="d-flex align-items-center gap-2">
+            <div class="flex-wrap gap-2 d-flex gap-md-4">
+              <div class="gap-2 d-flex align-items-center">
                 <label for="race">Race:</label>
                 <select name="race" id="race" class="form-select" style="width: 100px;">
                   <option value=""></option>
@@ -107,7 +107,7 @@
                   <option value="">Asian</option>
                 </select>
               </div>
-              <div class="d-flex align-items-center gap-2">
+              <div class="gap-2 d-flex align-items-center">
                 <label for="gender">Gender:</label>
                 <select name="gender" id="gender" class="form-select" style="width: 100px;">
                   <option value=""></option>
@@ -117,15 +117,15 @@
               </div>
             </div>
           </div>
-          <div class="d-flex flex-column gap-4">
-            <div class="d-flex flex-column gap-3">
+          <div class="gap-4 d-flex flex-column">
+            <div class="gap-3 d-flex flex-column">
               <h2>Contact & Emergency Contact Information</h2>
               <h3 class="text-decoration-underline !important">Confirm Best Contact Information:</h3>
               <p style="max-width: 800px;">Please provide the best contact phone numbers and emails that FieldWorks may
                 use to contact you with important announcements, or changes around your work schedule, including phone
                 calls, automated voice messages, and SMS text messages.</p>
             </div>
-            <div class="d-flex gap-md-4 gap-2 align-items-end flex-wrap">
+            <div class="flex-wrap gap-2 d-flex gap-md-4 align-items-end">
               <label for="phone">Cell Phone Number: </label>
               <div class="d-flex">
                 <span>(</span>
@@ -139,8 +139,8 @@
                   class="form-control textfield_underline">
               </div>
             </div>
-            <div class="d-flex gap-lg-5 gap-2 align-items-end flex-wrap ">
-              <div class="d-flex gap-md-4 gap-2 align-items-end flex-wrap">
+            <div class="flex-wrap gap-2 d-flex gap-lg-5 align-items-end ">
+              <div class="flex-wrap gap-2 d-flex gap-md-4 align-items-end">
                 <label for="other-phone">Other Phone Number: </label>
                 <div class="d-flex">
                   <span>(</span>
@@ -154,7 +154,7 @@
                     class="form-control textfield_underline">
                 </div>
               </div>
-              <div class="d-flex gap-4 align-items-end">
+              <div class="gap-4 d-flex align-items-end">
                 <label for="email" class="" type="">Email:</label>
                 <input autocomplete="off" id="email" name="email" type="email" placeholder=""
                   class="form-control textfield_underline">
@@ -163,12 +163,12 @@
           </div>
         </div>
 
-        <div class="form-group d-flex flex-wrap gap-3 justify-content-between" style="margin-top: 7em;">
-          <div class="d-flex gap-md-4 gap-2 align-items-end">
+        <div class="flex-wrap gap-3 form-group d-flex justify-content-between" style="margin-top: 7em;">
+          <div class="gap-2 d-flex gap-md-4 align-items-end">
             <label class="main">Signature:</label>
             <input type="text" class="form-control textfield_underline" />
           </div>
-          <div class="d-flex gap-md-4 gap-2 align-items-end">
+          <div class="gap-2 d-flex gap-md-4 align-items-end">
             <label class="main">Today's Date:</label>
             <input name="todays_date" id="todays_date" autocomplete="off" type="date" placeholder=""
               class="form-control textfield_underline input-md" required>
