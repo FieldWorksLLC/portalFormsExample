@@ -58,6 +58,7 @@ input.form-control.textfield_underline {
     border-bottom: 1px solid black;
     border-radius: unset;
     padding: 0px 5px 0px 5px;
+    width: auto;
 }
 .row {
     margin: 10px 0 10px 0;
