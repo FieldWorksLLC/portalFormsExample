@@ -23,7 +23,7 @@
 <body class="page-sign-form page-sign-form-application forms-self-service">
   <div class="container">
     <div class="row">
-      <form class="sign-form form form-inline container-paper p-3 p-md-5" method="post">
+      <form class="main sign-form form form-inline container-paper p-3 p-md-5" method="post">
         <input type="hidden" name="form_key" id="form_key"
           value="2e28735d1ad88e2bde84514011074310" /><!--    <input type="hidden" name="debug" id="debug" value="debug"/>-->
         <input type="hidden" name="form_entity_id" value="1" />
@@ -42,7 +42,7 @@
           </div>
         </div>
 
-        <div class="d-flex flex-column gap-5">
+        <div class="d-flex flex-column gap-6">
           <fieldset class="mt-5 !important d-flex flex-column gap-4">
             <div>
               <div class="d-flex gap-4 flex-wrap">
@@ -52,11 +52,11 @@
                 </div>
                 <div class="">
                   <label for="middlename" class="mb-2">Middle Legal Name</label>
-                  <input type="text" class="form-control textfield_underline"  name="middlename" id="middlename">
+                  <input type="text" class="form-control textfield_underline" name="middlename" id="middlename">
                 </div>
                 <div class="">
                   <label for="lastname" class="mb-2">Last Legal Name</label>
-                  <input type="text" class="form-control textfield_underline"  name="lastname" id="lastname">
+                  <input type="text" class="form-control textfield_underline" name="lastname" id="lastname">
                 </div>
               </div>
             </div>
@@ -86,16 +86,19 @@
               </div>
             </div>
           </fieldset>
-          <div class="d-flex flex-column gap-3">
-            <div class="d-flex flex-column gap-2">
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
               <h2>Optional Invitation to Self-Identify</h2>
               <h3 class="text-decoration-underline !important">Anti-Discrimination Notice:</h3>
-              <p style="max-width: 800px;">It is an unlawful employment practice for an employer to fail or refuse to hire or discharge any individual, or otherwise to discriminate against any individual with respect to that individual’s terms and conditions of employment, because of such individual’s race, color, religion, sex, or national origin.</p>
+              <p style="max-width: 800px;">It is an unlawful employment practice for an employer to fail or refuse to
+                hire or discharge any individual, or otherwise to discriminate against any individual with respect to
+                that individual’s terms and conditions of employment, because of such individual’s race, color,
+                religion, sex, or national origin.</p>
             </div>
             <div class="d-flex gap-md-4 gap-2 flex-wrap">
               <div class="d-flex align-items-center gap-2">
                 <label for="race">Race:</label>
-                <select name="race" id="race"  class="form-select" style="width: 100px;">
+                <select name="race" id="race" class="form-select" style="width: 100px;">
                   <option value=""></option>
                   <option value="">White</option>
                   <option value="">Black or African American</option>
@@ -106,7 +109,7 @@
               </div>
               <div class="d-flex align-items-center gap-2">
                 <label for="gender">Gender:</label>
-                <select name="gender" id="gender"  class="form-select" style="width: 100px;">
+                <select name="gender" id="gender" class="form-select" style="width: 100px;">
                   <option value=""></option>
                   <option value="">Male</option>
                   <option value="">Female</option>
@@ -114,21 +117,26 @@
               </div>
             </div>
           </div>
-          <div class="d-flex flex-column gap-3">
-            <div  class="d-flex flex-column gap-2">
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex flex-column gap-3">
               <h2>Contact & Emergency Contact Information</h2>
               <h3 class="text-decoration-underline !important">Confirm Best Contact Information:</h3>
-              <p style="max-width: 800px;">Please provide the best contact phone numbers and emails that FieldWorks may use to contact you with important announcements, or changes around your work schedule, including phone calls, automated voice messages, and SMS text messages.</p>
+              <p style="max-width: 800px;">Please provide the best contact phone numbers and emails that FieldWorks may
+                use to contact you with important announcements, or changes around your work schedule, including phone
+                calls, automated voice messages, and SMS text messages.</p>
             </div>
             <div class="d-flex gap-md-4 gap-2 align-items-end flex-wrap">
               <label for="phone">Cell Phone Number: </label>
               <div class="d-flex">
                 <span>(</span>
-                <input autocomplete="off" id="phone" name="phone1" type="text" style="width: 50px;" class="form-control textfield_underline" />
+                <input autocomplete="off" id="phone" name="phone1" type="text" style="width: 50px;"
+                  class="form-control textfield_underline" />
                 <span>) - </span>
-                <input autocomplete="off" name="phone2" type="text" style="width: 50px;" class="form-control textfield_underline">
+                <input autocomplete="off" name="phone2" type="text" style="width: 50px;"
+                  class="form-control textfield_underline">
                 <span> - </span>
-                <input autocomplete="off" name="phone3" type="text" style="width: 70px;"  class="form-control textfield_underline">
+                <input autocomplete="off" name="phone3" type="text" style="width: 70px;"
+                  class="form-control textfield_underline">
               </div>
             </div>
             <div class="d-flex gap-lg-5 gap-2 align-items-end flex-wrap ">
@@ -136,11 +144,14 @@
                 <label for="other-phone">Other Phone Number: </label>
                 <div class="d-flex">
                   <span>(</span>
-                  <input autocomplete="off" id="phone" name="other-phone1" type="text" style="width: 50px;" class="form-control textfield_underline" />
+                  <input autocomplete="off" id="phone" name="other-phone1" type="text" style="width: 50px;"
+                    class="form-control textfield_underline" />
                   <span>) - </span>
-                  <input autocomplete="off" name="other-phone2" type="text" style="width: 50px;" class="form-control textfield_underline">
+                  <input autocomplete="off" name="other-phone2" type="text" style="width: 50px;"
+                    class="form-control textfield_underline">
                   <span> - </span>
-                  <input autocomplete="off" name="other-phone3" type="text" style="width: 70px;"  class="form-control textfield_underline">
+                  <input autocomplete="off" name="other-phone3" type="text" style="width: 70px;"
+                    class="form-control textfield_underline">
                 </div>
               </div>
               <div class="d-flex gap-4 align-items-end">
@@ -151,8 +162,37 @@
             </div>
           </div>
         </div>
+
+        <div class="form-group d-flex flex-wrap gap-3 justify-content-between" style="margin-top: 7em;">
+          <div class="d-flex gap-md-4 gap-2 align-items-end">
+            <label class="main">Signature:</label>
+            <input type="text" class="form-control textfield_underline" />
+          </div>
+          <div class="d-flex gap-md-4 gap-2 align-items-end">
+            <label class="main">Today's Date:</label>
+            <input name="todays_date" id="todays_date" autocomplete="off" type="date" placeholder=""
+              class="form-control textfield_underline input-md" required>
+          </div>
+        </div>
       </form>
     </div>
   </div>
 </body>
+
+<style>
+  form.main {
+    padding: 6em !important;
+  }
+
+  @media (max-width:800px) {
+    form.main {
+      padding: 4em 2em !important;
+    }
+  }
+
+  .gap-6 {
+    gap: 5em;
+  }
+</style>
+
 </html>
