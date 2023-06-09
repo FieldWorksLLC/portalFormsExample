@@ -136,9 +136,9 @@
         <tr class="spacer huge">
         </tr>
         <tr>
-            <td><span>Signature</span></td>
+            <td class="bold"><span>Signature</span></td>
             <td class="underline"></td>
-            <td style="padding-left:40px;"><span>Todays Date:</span></td>
+            <td class="bold" style="padding-left:40px;"><span>Today's Date:</span></td>
             <td class="underline"><span></span></td>
         </tr>
     </table>
@@ -151,7 +151,8 @@
     tr {
         padding-bottom: 100px;
     }
-    td.underline {
+    .underline {
+        display: inline-block;
         width: 250px;
         border-bottom: 1px solid black;
     }
@@ -166,6 +167,10 @@
 
     .spacer.huge {
         height: 35px;
+    }
+
+    .bold {
+        font-weight: bold;
     }
 </style>
 
