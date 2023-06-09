@@ -23,14 +23,14 @@
 <body class="page-sign-form page-sign-form-application forms-self-service">
 <div class="container">
     <div class="row">
-        <form class="sign-form form form-inline container-paper p-3 p-md-5 mb-5" method="post">
+        <form class="p-3 mb-5 main sign-form form form-inline container-paper p-md-5" method="post">
             <input type="hidden" name="form_key" id="form_key" value="2e28735d1ad88e2bde84514011074310"/><!--    <input type="hidden" name="debug" id="debug" value="debug"/>-->
             <input type="hidden" name="form_entity_id" value="1"/>
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <div class="flex-wrap gap-2 d-flex justify-content-between align-items-center">
               <div class="">
                 <fieldset>
                   <legend>
-                    <p class="legend-heading">New Hire Information</p>
+                    <p class="legend-heading">Pay Method Selection Form</p>
                   </legend>
                 </fieldset>
               </div>
@@ -40,30 +40,31 @@
                 </fieldset>
               </div>
             </div>
+            <p class="mt-4 ">There are three ways to receive your pay.<br>Please select the method you wish to use by checking the box next to the corresponding option.</p>
 
-            <fieldset class="mt-5">
+            <fieldset class="gap-5 mt-5 d-flex flex-column">
               <div class="form-check">
                 <input type="radio" class="form-check-input" id="deposit-pay-card" name="pay-type">
                 <label for="deposit-pay-card" class="form-check-label main">
-                  <span class="main">Direct Deposit to Pay Card</span>
+                  <span class="main fw-bold">Direct Deposit to Pay Card</span>
                   <p>Our Pay Card program provides a dependable, safe and very convenient way to receive your pay. You can get your pay through ATM withdrawal, make purchases at stores, and get cash back with those purchases, or even transfer money to a personal or joint checking account. No waiting to get your check, no waiting to cash your check, just use your card to start spending your money. Every employee is eligible for the pay card program. There is no application and no approval process. Any fees for using the card are listed in your enrollment packet.</p>
                   <p>I select the Pay Card program to receive my pay. I hereby authorize FIELDWORKS to initiate credit entries for my net pay to the program. If funds to which I am not entitled are deposited to my account, I authorize debits to my account and return of such funds. This authority is to remain in effect until FIELDWORKS has received notification from me of its termination in such time and such manner as to afford FIELDWORKS a reasonable opportunity to act on it or until FIELDWORKS cancels the agreement. </p>
                 </label>
-                <div class="form-group">
-                  <fieldset class="inset">
+                <div class="mt-3 form-group inset">
+                  <fieldset class="">
                     <div>
                       <input type="radio" class="form-check-input" id="paycard-not-given" name="paycard-state">
-                      <label for="paycard-not-given" class="form-check-label  ">I have not started work yet and will get a paycard from my office director on my first day of work.</label>
+                      <label for="paycard-not-given" class="form-check-label ">I have not started work yet and will get a paycard from my office director on my first day of work.</label>
                     </div>
                     <div>
                       <input type="radio" class="form-check-input" id="paycard-given" name="paycard-state">
                       <label for="paycard-given" class="form-check-label ">I have been given a paycard by my director to enroll.</label>
                     </div>
                   </fieldset>
-                  <div class="d-flex gap-4">
-                    <label class="col-form-label" for="proxy-id-no">Proxy ID Number</label>
+                  <div class="gap-4 mt-2 d-flex">
+                    <label class="fw-bold" for="proxy-id-no">Proxy ID Number</label>
                     <div class="">
-                        <input autocomplete="off" id="proxy-id-no" type="text" placeholder="" class="form-control textfield_underline">
+                        <input autocomplete="off" id="proxy-id-no" name="proxy-id-no" type="text" class="form-control textfield_underline">
                     </div>
                   </div>
                 </div>
@@ -71,48 +72,51 @@
               <div class="form-check">
                 <input type="radio" class="form-check-input" id="deposit-checking" name="pay-type">
                 <label for="deposit-checking" class="form-check-label main">
-                  <span class="main">Direct Deposit to Checking Account. [We cannot make deposits to savings accounts]</span> 
+                  <span class="main fw-bold">Direct Deposit to Checking Account. [We cannot make deposits to savings accounts]</span> 
                   <p>I select direct deposit for disbursement of my pay. I hereby authorize FIELDWORKS to initiate credit entries for my net pay and the designated financial institution indicated to credit with amounts thereof the accounted indicated. If funds to which I am not entitled are deposited to my checking account, I authorize debits to my account and return of such funds. </p>
                   <p>This authority is to remain in effect until FIELDWORKS or designated financial institution has received notification from me of its termination in such time and such manner as to afford FIELDWORKS and designated financial institution a reasonable opportunity to act on it or until FIELDWORKS or designated financial institution cancels the agreement. </p>
                 </label>
-                <div class="form-group">
-                  <div class="d-flex gap-4">
-                    <label class="col-auto col-form-label" for="proxy-id-no">Bank Routing Number:</label>
-                    <div class="col-md-3">
-                        <input autocomplete="off" id="proxy-id-no" type="text" placeholder="" class="form-control textfield_underline">
+                <div class="mt-3 form-group">
+                  <div class="gap-4 d-flex">
+                    <label class="fw-bold" for="bank-routing-no">Bank Routing Number:</label>
+                    <div class="">
+                        <input autocomplete="off" id="bank-routing-no" name="bank-routing-no" type="text" placeholder="" class="form-control textfield_underline">
                     </div>
                   </div>
-                  <div class="d-flex gap-4">
-                    <label class="col-auto col-form-label" for="proxy-id-no">Account Number:</label>
-                    <div class="col-md-3">
-                        <input autocomplete="off" id="proxy-id-no" type="text" placeholder="" class="form-control textfield_underline">
+                  <div class="gap-4 d-flex">
+                    <label class="fw-bold" for="account-no">Account Number:</label>
+                    <div class="">
+                        <input autocomplete="off" id="account-no" name="account-no" type="text" placeholder="" class="form-control textfield_underline">
                     </div>
                   </div>
                   <p class="mt-2"><strong>WARNING:</strong> Please enter the numbers carefully. If you enter incorrect information, your payment will be delayed, and you will have to wait until the deposit is returned by the bank before it can be reissued. This can take up to 7-10 days. </p>
                 </div>
               </div>
               <div class="form-check">
-                <input type="radio" class="form-check-input" id="deposit-pay-card" name="pay-type">
-                <label for="deposit-pay-card" class="form-check-label main">
-                  <span class="main">Paper Check</span>
+                <input type="radio" class="form-check-input" id="deposit-paper-check" name="pay-type">
+                <label for="deposit-paper-check" class="form-check-label main">
+                  <span class="main fw-bold">Paper Check</span>
                   <p>I select to receive a paper check. Checks will be mailed from our national office on the date of pay via the United States Postal Service to the address on file. They will not be available for in person pickup. We are not responsible for the speed of the post office. Checks may take 7-10 days to arrive. A bank stop payment fee of $25 per paycheck for any paper checks that need reissued will be deducted from the replacement check. This includes those lost in the mail, or damaged, or destroyed. We are not responsible for lost paychecks.</p>
                 </label>
-                <div class="d-flex align-items-center">
-                  <strong>Initials: </strong><input type="text" class="form-control textfield_underline text-center" style="width: 50px">
-                  <p class="mb-0">, I understand that by signing up for paper check I authorize FieldWorks to deduct $25 per paycheck from any checks that I request to be re-issued.</p>
+                <div class="mt-3">
+                  <p>
+                    <label for="initials" class="fw-bold">Initials: </label><input type="text" id="initials" name="initials" class="text-center d-inline-block form-control textfield_underline" style="width: 50px">
+                    <span class="mb-0">, I understand that by signing up for paper check I authorize FieldWorks to deduct $25 per paycheck from any checks that I request to be re-issued.</span>
+                  </p>
                 </div>
               </div>
             </fieldset>
 
-            <div class="form-group row" style="margin-top: 10em;">
-                <label class="col-md-1 col-form-label  main">Signature</label>
-                <div class="col-md-4">
-                    <input type="text"  class="form-control textfield_underline"/>
-                </div>
-                <label class="col-md-1 col-form-label main" style="width: 120px">Today's Date</label>
-                <div class="col-md-2">
-                    <input name="todays_date" id="todays_date" autocomplete="off" type="date" placeholder="" class="form-control textfield_underline input-md" required>
-                </div>
+            <div class="flex-wrap gap-3 form-group d-flex justify-content-between" style="margin-top: 7em;">
+              <div class="gap-2 d-flex gap-md-4 align-items-end">
+                <label class="main" for="signature">Signature:</label>
+                <input type="text" id="signature" name="signature" class="form-control textfield_underline" />
+              </div>
+              <div class="gap-2 d-flex gap-md-4 align-items-end">
+                <label class="main" for="date">Today's Date:</label>
+                <input name="date" id="date" autocomplete="off" type="date" placeholder=""
+                  class="form-control textfield_underline input-md" required>
+              </div>
             </div>
         </form>
     </div>

@@ -123,3 +123,7 @@ form.main {
 .gap-6 {
   gap: 5em;
 }
+
+.inset {
+    margin-left: 1.5em;
+}
