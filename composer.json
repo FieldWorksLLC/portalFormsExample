@@ -1,0 +1,17 @@
+{
+    "name": "matt/project",
+    "autoload": {
+        "psr-4": {
+            "Matt\\Project\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mattc321",
+            "email": "cascadiamatt@gmail.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.1"
+    }
+}
