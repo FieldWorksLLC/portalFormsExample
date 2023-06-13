@@ -1,0 +1,272 @@
+
+/* Class Utilities */
+.bg-grey {
+  background: #c0c1c4 !important;
+}
+
+p.big {
+  font-size: 1.2em;
+}
+
+p.small {
+  font-size: .8em;
+}
+
+.border-black {
+  border-color: black !important;
+}
+
+.border-b-0 {
+  border-bottom: 0 !important;
+}
+
+
+
+/* Element Styles */
+h1 {
+  font-size: 2em;
+  font-weight: bold !important;
+  line-height: 1.7em;
+  margin-bottom: 0;
+}
+
+hr {
+  border-color: #000;
+  border-width: 2px;
+  opacity: 1;
+}
+
+form .input {
+  border: 2px solid black;
+  border-right:0;
+  border-bottom: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input.underline {
+  border-bottom: 1px solid #000 !important;
+}
+
+form .input:first-child {
+  border-left: 0px;
+}
+
+form .input {
+  flex-grow: 1;
+}
+
+form .input input {
+  width: 100%;
+}
+
+form label {
+  padding: 4px;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  display: block;
+  border: 0px;
+  padding: 6px 4px;
+  outline: none;
+  background: #f2f4ff;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  background-color: transparent;
+}
+
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+input[type="radio"] + label {
+  display: flex;
+  padding: 0;
+}
+
+input[type="radio"] + label::before {
+  content: "□";
+  font-size: 1.5em;
+  line-height: .8;
+  background: #f2f4ff;
+  width: 20px;
+  height: 20px;
+  margin-right: .3em;
+  border-radius: 3px;
+}
+
+input[type="radio"]:checked + label::before {
+  content: "☑";
+  /* background: #fff; */
+}
+
+input.plain {
+  background-color: transparent !important;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 0;
+}
+
+/* Specitfic Sections Styles */
+.ssn {
+  display: flex;
+  gap: .4em;
+  padding: 0 .3em;
+  padding-bottom: 2px;
+}
+
+.ssn input[type="text"] {
+  border: 1.5px solid black !important;
+  font-family: monospace;
+  width: 5em;
+  padding-left: .4em;
+  letter-spacing: 1.2em;
+  background-image: repeating-linear-gradient(to right, transparent, transparent 33%, #000 33%, #000 35%);
+}
+
+.ssn input:first-of-type {
+  width: 5em;
+}
+
+.ssn input:nth-of-type(2) {
+  width: 3.3em !important;
+  background-image: repeating-linear-gradient(to right, transparent, transparent 50%, #000 50%, #000 53%);
+}
+
+.ssn input:nth-of-type(3) {
+  width: 6.9em !important;
+  background-image: repeating-linear-gradient(to right, transparent, transparent 25%, #000 25%, #000 26.5%);
+}
+
+.bracket-num {
+  list-style: none;
+}
+
+.bracket-num> li:before {
+  counter-increment: e2 ;
+}
+.bracket-num> li:before {
+  counter-increment: e2;
+  content: "(2). ";
+  color: #231F20;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#status-part-1 > div {
+  display: flex;
+  gap: 2em;
+  padding: .5em .3em;
+  border-bottom: 1px solid black;
+}
+
+#status-part-1 > div:last-of-type {
+  border-bottom: 0;
+}
+
+
+#employer-lists .underline {
+  width: 100%;
+  border-width: 0px !important;
+}
+
+#employer-lists td:first-of-type > div {
+  border: 2px solid black;
+  border-width: 0px 2px 2px 0px;
+}
+
+#employer-lists td:nth-of-type(2) > div {
+  border: 2px solid black;
+  border-width: 0px 0px 2px 2px;
+}
+
+#employer-lists td:nth-of-type(3) > div {
+  border: 2px solid black;
+  border-width: 0px 0px 2px 0px;
+}#employer-lists
+
+#employer-lists div.border-b-0 {
+  border-bottom: 0 !important;
+}
+
+#employer-lists td:not(:last-child),  
+#employer-lists tr:nth-child(n + 5) td {
+  padding: 0;
+  padding-right: 1.4em;
+}
+
+#employer-lists tr:last-of-type td {
+  border-bottom: 0;;
+}
+
+p.sub-item {
+  background: #dadbdd;
+  margin-bottom: 0;
+  padding: 2px 3px;
+}
+
+#documents-list td {
+  border: 2px solid black;
+  padding: 0;
+  vertical-align: top;
+}
+
+#documents-list li::marker {
+  font-weight: bold;
+}
+
+#documents-list td > ol > li,
+#documents-list td > ol > p {
+  position: relative;
+  padding: .4em;
+}
+
+
+#documents-list td > ol > li:not(:last-of-type)::after,
+#documents-list td > ol > p::after {
+  position: absolute;
+  bottom: 0;
+  left: -2em;
+  content: "";
+  display: block;
+  width: calc(100% + 2em);
+  border-bottom: 2px solid black;
+}
+
+#documents-list td > ol > p  {
+  padding-right: 2em;
+}
+
+
+#documents-list td > ol > p::after{
+  left: -1.7em;
+  width: calc(100% + 1.8em);
+}
+
+#documents-list th {
+  font-size: 1.3em;
+  padding: 1em 5%;
+}
+
+#documents-list .grey {
+  background: #c0c1c4;
+}
+
+#documents-list .no-border td {
+  border: 0;
+  padding: 0;
+}

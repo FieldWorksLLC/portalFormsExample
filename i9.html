@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/government-forms.css">
+
+  <title>I-9 Form</title>
+</head>
+
+<body>
+  <main class="py-5">
+    <div class="container">
+      <header class="gap-4 pb-3 text-center d-flex justify-content-between align-items-center" style="font-family: serif;border-bottom: 10px solid black;">
+        <img src="/seal-dhs.svg" width="150" alt="Department of Homeland Security Logo">
+        <div>
+          <h1>Employment Eligibility Verification <br />Department of Homeland Security</h1>
+          <p class="fs-4 fw-light">U.S Citizenship and Immigration Services</p>
+        </div>
+        <div class="fs-5">
+          <span class="fw-bold">USCIS<br> Form I-9</span>
+          <p>OMB No. 1615-0047 <br> Expires 10/31/2022</p>
+        </div>
+      </header>
+      <hr class="my-2">
+      <div class="">
+        <p>
+          <strong>► START HERE: Read instructions carefully before completing this form. The instructions must be available, either in paper or electronically, during completion of this form. Employers are liable for errors in the completion of this form.</strong>
+        </p>
+        <p class="p-0">
+          <b>ANTI-DISCRIMINATION NOTICE:</b>  It is illegal to discriminate against work-authorized individuals. Employers CANNOT specify which document(s) an employee may present to establish employment authorization and identity. The refusal to hire or continue to employ an individual because the documentation presented has a future expiration date may also constitute illegal discrimination.
+        </p>
+      </div>
+      <!-- Section 1 -->
+      <section id="section-1" class="">
+        <form class="border border-2 border-dark">
+          <div class="d-flex flex-column">
+            <div class="p-2 bg-grey">
+              <h2 class="d-inline fs-4">Section 1. Employeee Information and Attestation</h2>
+              <p class="d-inline fst-italic">(Employees Must Complete and sign Section 1 for Form I-9 no later than the
+                <b>first day of employment</b>, but not before accepting a job offer.)
+              </p>
+            </div>
+          </div>
+          <!-- Employee Information -->
+          <div>
+            <div class="d-flex">
+              <div class="input">
+                <label for="sec1-employee-lastname" class="p-1">Last Name <i>(Family Name)</i></label>
+                <input type="text" id="sec1-employee-lastname" name="employee-lastname" class="px-1">
+              </div>
+              <div class="input">
+                <label for="sec1-employee-firstname">First Name <i>(Given Name)</i></label>
+                <input type="text" id="sec1-employee-firstname" name="employee-firstname">
+              </div>
+              <div class="input">
+                <label for="sec1-employee-middlename">Middle Initial</label>
+                <input type="text" id="sec1-employee-middlename" name="employee-middlename">
+              </div>
+              <div class="input">
+                <label for="sec1-employee-othernames">Other Last Names Used <i>(if any)</i></label>
+                <input type="text" id="sec1-employee-othernames" name="employee-othernames">
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="input">
+                <label for="sec1-employee-address">Address <i>(Street Number & Name)</i></label>
+                <input type="text" id="sec1-employee-address" name="employee-address">
+              </div>
+              <div class="input">
+                <label for="sec1-employee-apt">Apt. Number</label>
+                <input type="text" id="sec1-employee-apt" name="employee-apt">
+              </div>
+              <div class="input">
+                <label for="sec1-employee-city">City Or Town</label>
+                <input type="text" id="sec1-employee-city" name="employee-city">
+              </div>
+              <div class="input">
+                <label for="sec1-employee-state">State</label>
+                <select name="employee-state" id="sec1-employee-state">
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <div class="input">
+                <label for="sec1-employee-zip">Zip Code</label>
+                <input type="text" id="sec1-employee-zip" name="employee-zip">
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="input">
+                <label for="sec1-employee-dob">Date of Birth <i>(mm/dd/yy)</i></label>
+                <input type="text" id="sec1-employee-dob" name="employee-dob">
+              </div>
+              <div class="input">
+                <label for="sec1-employee-ssn1">U.S. Social Security Number</label>
+                <div class="ssn">
+                  <input maxlength="3" type="text" id="sec1-employee-ssn1" name="employee-ssn1">
+                  <span>-</span>
+                  <input maxlength="2" type="text" id="sec1employee--ssn2" name="semployee-ssn2">
+                  <span>-</span>
+                  <input maxlength="4" type="text" id="sec1-semployee-sn3" name="employee-ssn3">
+                </div>
+              </div>
+              <div class="input">
+                <label for="sec1-employee-email">Employee's Email Address</label>
+                <input type="text" id="sec1-employee-email" name="employee-email">
+              </div>
+              <div class="input">
+                <label for="sec1-employee-phone">Employee's Telephone Number</label>
+                <input type="text" id="sec1-employee-phone" name="employee-phone">
+              </div>
+            </div>
+          </div>
+        </form>
+        <p class="mt-3 mb-1 big">
+          <strong>
+            I am aware that federal law provides for imprisonment and/or fines for false statements or use of false documents in connection with the completion of this form.
+          </strong>
+        </p>
+        <p class="big">
+          <strong>
+            I attest, under penalty of perjury, that I am (check one of the following boxes):
+          </strong>
+        </p>
+        <!-- Citizenship Status - Section 1 -->
+        <form id="citizenship-status" class="">
+          <!-- No 1 - 3 -->
+          <div id="status-part-1" style="border: 1px solid black;">
+            <div class="d-flex align-items-center">
+              <input type="radio" id="sec1-us-citizen" name="citizen-status" value="us-citizen">
+              <label for="sec1-us-citizen">1. A citizen of the United States</label>
+            </div>
+            <div class="d-flex align-items-center">
+                <input type="radio" id="sec1-non-national" name="citizen-status" value="non-national">
+                <label for="sec1-non-national">2. A noncitizen national of the United States (See instructions)</label>
+            </div>
+            <div class="gap-5 d-flex align-items-center">
+              <input type="radio" id="sec1-permanent-resident" name="citizen-status" value="permanent-resident">
+              <label for="sec1-permanent-resident">3. A lawful permanent resident</label>
+              <div class="flex-grow gap-3 d-flex align-items-center">
+                <label for="sec1-alien-regno">(Alien Registration Number/USCIS Number):</label>
+                <input class="underline" type="text" id="sec1-alien-regno" name="sec1-alien-regno">
+              </div>
+            </div>
+          </div>
+          <!-- No 4 and  QR Box-->
+          <div class="d-flex">
+            <div class="flex-grow-1" style="border: 1px solid black;; border-top: 0;padding: .5em .3em;">
+              <div class="d-flex align-items-center">
+                <input type="radio" id="sec1-alien-with-work-auth" name="citizen-status" value="alien-with-work-auth">
+                <label for="sec1-alien-with-work-auth">
+                  4. An alien authorized to work until (expiration date, if applicable, mm/dd/yyyy):<br> 
+                  Some aliens may write "N/A" in the expiration date field. (See instructions)
+                </label>
+                <input class="underline" style="margin-left: 2.3em;" type="text" id="sec1-alien-exp-date" name="alien-exp-date">
+              </div>
+              <div class="p-3 pb-0">
+                <p>Aliens authorized to work must provide only one of the following document numbers to complete Form I-9:<br>
+                  An Alien Registration Number/USCIS Number OR Form I-94 Admission Number OR Foreign Passport Number.</p>
+                <div>
+                  <div class="flex-grow gap-3 d-flex align-items-center">
+                    <label for="sec1-alien-regno2">1. Alien Registration Number/USCIS Number:</label>
+                    <input class="underline flex-grow-1" type="text" id="sec1-alien-regno2" name="alien-regno2" style="max-width: 400px;">
+                  </div>
+                  <span class="ml-5 d-block fw-semibold fs-5" style="margin-left: 4em;">OR</span>
+                  <div class="flex-grow gap-3 d-flex align-items-center">
+                    <label for="sec1-i94-no">2. Form I-94 Admission Number:</label>
+                    <input class="underline flex-grow-1" type="text" id="sec1-i94-no" name="i94-no" style="max-width: 485px;">
+                  </div>
+                  <span class="ml-5 d-block fw-semibold fs-5" style="margin-left: 4em;">OR</span>
+                  <div class="flex-grow gap-3 d-flex align-items-center">
+                    <label for="sec1-passport-no">3. Foreign Passport Number:</label>
+                    <input class="underline flex-grow-1" type="text" id="sec1-passport-no" name="passport-no" style="max-width: 515px;">
+                  </div>
+                  <div class="flex-grow gap-3 mt-3 d-flex align-items-center ms-4">
+                    <label for="sec1-passport-country">Country of Issuance:</label>
+                    <input class="underline flex-grow-1" type="text" id="sec1-passport-country" name="passport-country" style="max-width: 545px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="border: 2px solid black;width: 350px; border-let:0; margin-top: 5em;" >
+              <p class="my-2 text-center small">QR Code - Section 1 <br> Do Not Write In This Space</p>
+            </div>
+          </div>
+          <!-- Employee Signature and Date -->
+          <div class="my-3 border border-2 border-black d-flex">
+            <div class="d-flex flex-column flex-grow-1" style="border-right: 2px solid #000;flex-basis: 40%;">
+              <label for="sec1-employee-signature">Signature of Employee</label>
+              <input class="plain" type="text" id="sec1-employee-signature" name="employee-signature">
+            </div>
+            <div class="d-flex flex-column flex-grow-1">
+              <label for="sec1-date-employee-signed">Today's Date <i>(mm/dd/yyyy)</i></label>
+              <input class="plain" type="text" id="sec1-date-employee-signed" name="date-employee-signed">
+            </div>
+          </div>
+        </form>
+
+        <!-- Section 1 Preparer and Translation Certification -->
+        <form>
+          <div>
+            <div class="border border-2 d-flex flex-column border-dark">
+              <div class="p-2 bg-grey">
+                <h2 class="d-inline fs-4">Preparer and/or Translator Certification (check one):</h2>
+                <div class="gap-5 d-flex align-items-center">
+                  <div class="gap-5 d-flex align-items-center">
+                    <input type="radio" id="sec1-no-preparer" name="preparer-status" value="no-preparer">
+                    <label for="sec1-no-preparer">I did not use a preparer or translator.</label>
+                  </div>
+                  <div class="gap-5 d-flex align-items-center">
+                    <input type="radio" id="sec1-preparer-present" name="preparer-status" value="preparer-present">
+                    <label for="sec1-preparer-present">A preparer(s) and/or translator(s) assisted the employee in completing Section 1.</label>
+                  </div>
+                </div>
+                <p class="d-inline fst-italic" style="font-size: 1.08em;">(Fields below must be completed and signed when preparers and/or translators assist and employee in completing Section 1.)</p>
+              </div>
+            </div>
+            <div>
+              <p class="m-1" style="font-size: 1.07em;">
+                <strong>
+                  I attest, under penalty of perjury, that I have assisted in the completion of Section 1 of this form and that to the best of my knowledge the information is true and correct.
+                </strong>
+              </p>
+            </div>
+            <!-- Preparer and Translation Certification Form-->
+            <div class="border border-2 border-dark">
+              <div class="d-flex">
+                <div class="d-flex flex-column flex-grow-1" style="border-right: 2px solid #000;flex-basis: 40%;">
+                  <label for="sec1-preparer-signature">Signature of Preparer or Translator</label>
+                  <input class="plain" type="text" id="sec1-preparer-signature" name="preparer-signature">
+                </div>
+                <div class="d-flex flex-column flex-grow-1">
+                  <label for="sec1-date-preparer-signed">Today's Date <i>(mm/dd/yyyy)</i></label>
+                  <input class="plain" type="text" id="sec1-date-preparer-signed" name="date-preparer-signed">
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="input">
+                  <label for="sec1-preparer-lastname">Last Name <i>(Family Name)</i></label>
+                  <input type="text" id="sec1-preparer-lastname" name="preparer-lastname">
+                </div>
+                <div class="input">
+                  <label for="sec1-preparer-firstname">First Name <i>(Given Name)</i></label>
+                  <input type="text" id="sec1-preparer-firstname" name="preparer-firstname">
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="input">
+                  <label for="sec1-preparer-address">Address <i>(Street Number and Name)</i></label>
+                  <input type="text" id="sec1-preparer-address" name="preparer-address">
+                </div>
+                <div class="input">
+                  <label for="sec1-preparer-city">City or Town</label>
+                  <input type="text" id="sec1-preparer-city" name="preparer-city">
+                </div>
+                <div class="input">
+                  <label for="sec1-preparer-state">State</label>
+                  <select name="preparer-state" id="sec1-preparer-state">
+                    <option value="" selected="selected"></option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                  </select>
+                </div>
+                <div class="input">
+                  <label for="sec1-preparer-zip">ZIP Code</label>
+                  <input type="text" id="sec1-preparer-zip" name="preparer-zip">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="d-flex align-items-center justify-content-center" style="margin: 6em 0;">
+          <img src="/stop.svg" width="40" alt="">
+          <span class="d-inline-block px-5 mx-2 fs-5" style="background-color: #c0c1c4;font-family: serif;"><i>Employer Completes Next Page</i></span>
+          <img src="/stop.svg" width="40" alt="">
+        </div>
+      </section>
+      <hr style="border-width:15px;" class="mb-2">
+
+      <!-- SECTION 2 -->
+      <section id="section2">
+        <form>
+          <!-- Employer or Authorized Representative Review and Verification -->
+          <div>
+            <div class="border-2 border border-dark p-2 bg-grey">
+              <h2 class="fs-4">Section 2. Employer or Authorized Representative Review and Verification</h2>
+              <p class="fst-italic mb-0">(Employers or their authorized representative must complete and sign Section 2 within 3 business days of the employee's first day of employment. You must physically examine one document from List A OR a combination of one document from List B and one document from List C as listed on the "Lists of Acceptable Documents.")</p>
+            </div>
+            <div class="d-flex border-3 border-dark border" style="border-top: 0px !important;">
+              <div class="input border-top-0 d-flex align-items-center justify-content-center">
+                <strong>Employee Info from Section 1</strong>
+              </div>
+              <div class="input border-top-0">
+                <label for="sec2-employee-lastname">Last Name <i>(Family Name)</i></label>
+                <input type="text" id="sec2-employee-lastname" name="sec2-employee-lastname">
+              </div>
+              <div class="input border-top-0">
+                <label for="sec2-employee-firstname">First Name <i>(Given Name)</i></label>
+                <input type="text" id="sec2-employee-firstname" name="sec2-employee-firstname">
+              </div>
+              <div class="input border-top-0" style="max-width: 70px;">
+                <label for="sec2-employee-mi">M.I.</label>
+                <input type="text" id="sec2-employee-mi" name="sec2-employee-mi">
+              </div>
+              <div class="input border-top-0">
+                <label for="sec2-employee-citizenship-status">Citizenship/Immigration Status</label>
+                <input type="text" id="sec2-employee-citizenship-status" name="sec2-employee-citizenship-status">
+              </div>
+            </div>
+          </div>
+
+          <!-- Employment Lists (A-C) | Section 2-->
+          <div>
+            <table class="mt-4">
+              <thead>
+                <tr>
+                  <th class="text-center"  style="width:33%;"><span class="fs-5">List A</span><br> Identity and Employment Authorization</th>
+                  <th style="width: 50px">OR</th>
+                  <th class="text-center" style="width:33%;"><span class="fs-5">List B</span><br>Identity</th>
+                  <th style="width: 50px">AND</th>
+                  <th class="text-center" style="width:33%;"><span class="fs-5">List C</span><br> Employment Authorization </th>
+                </tr>
+              </thead>
+            </table>
+            <table id="employer-lists" style="width: 100%" class="border-2 border-dark border">
+              <tbody>
+                <div class="">
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-document-title-a">Document Title</label>
+                        <input id="employer-document-title-a" name="employer-document-title-a" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <label for="employer-document-title-b">Document Title</label>
+                        <input name="employer-document-title-b" id="employer-document-title-b" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <label for="employer-document-title-c">Document Title</label>
+                        <input id="employer-document-title-c" name="employer-document-title-c" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-issuing-authority-a">Issuing Authority</label>
+                        <input id="employer-issuing-authority-a" name="employer-issuing-authority-a" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <label for="employer-issuing-authority-b">Issuing Authority</label>
+                        <input name="employer-issuing-authority-b" id="employer-issuing-authority-b" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <label for="employer-issuing-authority-c">Issuing Authority</label>
+                        <input name="employer-issuing-authority-c" id="employer-issuing-authority-c" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-document-number-a">Document Number</label>
+                        <input id="employer-document-number-a" name="employer-document-number-a" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <label for="employer-document-number-b">Document Number</label>
+                        <input id="employer-document-number-b" name="employer-document-number-b" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <label for="employer-document-number-c">Document Number</label>
+                        <input id="employer-document-number-c" name="employer-document-number-c" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div style="border-bottom-width: 4px;">
+                        <label for="employer-expiration-a">Expiration Date
+                          <i>(if any) (mm/dd/yyyy)</i>
+                        </label>
+                        <input id="employer-expiration-a" name="employer-expiration-a" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="border-b-0">
+                        <label  for="employer-expiration-b">Expiration Date
+                          <i>(if any) (mm/dd/yyyy)</i>
+                        </label>
+                        <input id="employer-expiration-b" name="employer-expiration-b" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="border-b-0">
+                        <label  for="employer-expiration-c">Expiration Date
+                          <i>(if any) (mm/dd/yyyy)</i>
+                        </label>
+                        <input id="employer-expiration-c" name="employer-expiration-c" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-document-title-a-2">Document Title</label>
+                        <input id="employer-document-title-a-2" name="employer-document-title-a-2" type="text" class="underline">
+                      </div>
+                    </td>
+                    <td colspan="3" rowspan="8" style="border: 2px solid black; border-top-width: 4px; border-right: 0; border-bottom: 0;padding: 1em;">
+                      <div class="border-0 d-flex gap-2">
+                        <div class="d-flex flex-column justify-content-between" style="flex-basis: 60%;height: 30em;border: 2px solid black;">
+                          <label for="employer-additional-info" class="d-block">Additional Information</label>
+                          <textarea id="employer-additional-info" name="employer-additional-info" class="flex-grow" style="height: 93%;border:0;"></textarea>
+                        </div>
+                        <div class="flex-grow-1" style="border: 2px solid black;height: 20em">
+                          <p class="small text-center">QR Code - Sections 2 & 3 <br> Do Not Write In This Space</label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-issuing-authority-a-2">Issuing Authority</label>
+                        <input id="employer-issuing-authority-a-2" name="employer-issuing-authority-a-2" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-document-number-a-2">Document Number</label>
+                        <input id="employer-document-number-a-2" name="employer-document-number-a-2" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div style="border-bottom-width: 4px;">
+                        <label for="employer-expiration-a-2">Expiration Date <i>(if any) (mm/dd/yyyy)</i></label>
+                        <input id="employer-expiration-a-2" name="employer-expiration-a-2" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-document-title-a-3">Document Title</label>
+                        <input id="employer-document-title-a-3" name="employer-document-title-a-3" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-issuing-authority-a-3">Issuing Authority</label>
+                        <input id="employer-issuing-authority-a-3" name="employer-issuing-authority-a-3" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div>
+                        <label for="employer-document-number-a-3">Document Number</label>
+                        <input id="employer-document-number-a-3" name="employer-document-number-a-3" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="border-b-0">
+                        <label for="employer-expiration-a-3">Expiration Date <i>(if any) (mm/dd/yyyy)</i></label>
+                        <input id="employer-expiration-a-3" name="employer-expiration-a-3" type="text" class="underline">
+                      </div>
+                    </td>
+                  </tr>
+                </div>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Employer Certification-->
+          <p class="my-2 mt-4"><strong>Certification: I attest, under penalty of perjury, that (1) I have examined the document(s) presented by the above-named employee,
+            (2) the above-listed document(s) appear to be genuine and to relate to the employee named, and (3) to the best of my knowledge the employee is authorized to work in the United States.
+            </strong></p>
+          <div class="d-flex align-items-end gap-3">
+            <label for="employee-date-of-employment"><strong>The employee's first day of employment (mm/dd/yyyy):</strong></label>
+            <input id="employee-date-of-employment" name="employee-date-of-employment" type="text" class="underline">
+            <strong><i>(See instructions for exemptions)</i></strong>
+          </div>
+          <div class="border-2 border-dark border my-3" style="border-top: 0 !important;">
+            <div class="d-flex">
+              <div class="input" style="flex-bais: 30%;">
+                <label for="employer-signature">Signature of Employer or Authorized Representative</label>
+                <input class="plain" type="text" id="employer-signature" name="employer-signature">
+              </div>
+              <div class="input">
+                <label for="employer-sign-date">Today's Date<i>(mm/dd/yyyy)</i></label>
+                <input class="plain" type="text" id="employer-sign-date" name="employer-sign-date">
+              </div>
+              <div class="input">
+                <label for="employer-title">Title of Employer or Authorized Representative</i></label>
+                <input type="text" id="employer-title" name="employer-title">
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="input">
+                <label for="employer-lastname">Last Name of Employer or Authorized Representative</label>
+                <input type="text" id="employer-lastname" name="employer-lastname">
+              </div>
+              <div class="input">
+                <label for="employer-first-name">First Name of Employer or Authorized Representative</i></label>
+                <input type="text" id="employer-first-name" name="employer-first-name">
+              </div>
+              <div class="input">
+                <label for="employer-business-name">Employer's Business or Organization Name</label>
+                <input type="text" id="employer-business-name" name="employer-business-name">
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="input">
+                <label for="employer-address" style="width:160%">Employer's Business or Organization Address (Street Number and Name) </label>
+                <input type="text" id="employer-address" name="employer-address">
+              </div>
+              <div class="input">
+                <label for="employer-city">City or Town</label>
+                <input type="text" id="employer-city" name="employer-city">
+              </div>
+              <div class="input flex-grow-0" style="width:100px">
+                <label for="employer-state">State</label>
+                <select name="employer-state" id="employer-state">
+                  <option value="" selected="selected"></option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <div class="input">
+                <label for="employer-zip">ZIP Code</label>
+                <input type="text" id="employer-zip" name="employer-zip">
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- Section 3-->
+      <section id="section-3" class="mb-5">
+        <form>
+          <div class="d-flex flex-column">
+            <div class="border-2 border border-dark p-2 bg-grey " style="border-bottom: 0 !important;">
+              <h2 class="fs-4 d-inline-block mr-2 mb-0">Section 3. Reverification and Rehires</h2>
+              <p class="big fst-italic mb-0 d-inline">(To be completed and signed by employer or authorized representative.)</p>
+            </div>
+            <div class="d-flex border-2 border border-dark">
+              <div class="d-flex flex-column"style="flex-basis: 70%;" >
+                <div>
+                  <p class="sub-item"><span class="fw-bold">A.</span> New Name (if applicable)</p>
+                </div>
+                <div class="d-flex">
+                  <div class="input">
+                    <label for="employee-reverification-lastname">Last Name <i>(Family Name)</i></label>
+                    <input type="text" id="employee-reverification-lastname" name="employee-reverification-lastname">
+                  </div>
+                  <div class="input">
+                    <label for="employee-reverification-firstname">First Name <i>(Given Name)</i></label>
+                    <input type="text" id="employee-reverification-firstname" name="employee-reverification-firstname">
+                  </div>
+                  <div class="input">
+                    <label for="employee-reverification-initials">Middle Initial</label>
+                    <input type="text" id="employee-reverification-initials" name="employee-reverification-initials">
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <div style="border-left: 2px solid black;">
+                  <p class="sub-item"><span class="fw-bold">B.</span> Date of Rehire <i>(if applicable)</i></p>
+                </div>
+                <div >
+                  <div class="input" style="border-left: 2px solid black;">
+                    <label for="employee-reverification-date">Date <i>(mm/dd/yyyy)</i></label>
+                    <input type="text" id="employee-reverification-date" name="employee-reverification-date">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-2 border border-dark my-3">
+              <p class="sub-item"><span class="fw-bold">C.</span> If the employee's previous grant of employment authorization has expired, provide the information for the document or receipt that establishes continuing employment authorization in the space provided below.</p>
+              <div class="d-flex">
+                <div class="input">
+                  <label for="employee-document-title">Document Title</i></label>
+                  <input type="text" id="employee-document-title" name="employee-document-title">
+                </div>
+                <div class="input">
+                  <label for="employee-document-number">Document Number</label>
+                  <input type="text" id="employee-document-number" name="employee-document-number">
+                </div>
+                <div class="input">
+                  <label for="employee-expiration-date">Expiration Date <i>(if any) (mm/dd/yyyy)</i></label>
+                  <input type="text" id="employee-expiration-date" name="employee-expiration-date">
+                </div>
+              </div>
+            </div>
+            <p class="mb-3"><strong>I attest, under penalty of perjury, that to the best of my knowledge, this employee is authorized to work in the United States, and if the employee presented document(s), the document(s) I have examined appear to be genuine and to relate to the individual.
+            </strong></p>
+            <div class="border-2 border-dark border" style="border-top: 0 !important;">
+              <div class="d-flex">
+                <div class="input" style="flex-bais: 30%;">
+                  <label for="employer-signature-2">Signature of Employer or Authorized Representative</label>
+                  <input class="plain" type="text" id="employer-signature-2" name="employer-signature-2">
+                </div>
+                <div class="input">
+                  <label for="employer-sign-date-2">Today's Date<i>(mm/dd/yyyy)</i></label>
+                  <input class="plain" type="text" id="employer-sign-date-2" name="employer-sign-date-2">
+                </div>
+                <div class="input">
+                  <label for="employer-name-2">Name of Employer or Authorized Representative</label>
+                  <input type="text" id="employer-name-2" name="employer-name-2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+      <hr style="border-width:15px;" class="mb-2">
+      <hr>
+
+      <!-- Documents List-->
+      <section id="documents-list" class="my-5">
+        <div class="text-center mb-5">
+          <h2 class="fs-3">LISTS OF ACCEPTABLE DOCUMENTS <br>All documents must be UNEXPIRED</h2>
+          <p class="big">Employees may present one selection from List A <br>
+            or a combination of one selection from List B and one selection from List C.</p>
+        </div>
+        <table class="border-2 border-dark border">
+          <thead class="text-center">
+            <th style="width: 33%;">
+              <span class="fs-5">LIST A </span><br>Documents that Establish Both Identity and Employment Authorization
+            </th>
+            <th style="width: 70px;" class="grey"></th>
+            <th style="width: 33%;">
+              <span class="fs-5">LIST B </span><br> Documents that Establish Identity
+            </th>
+            <th style="width: 33%;"><span class="fs-5">LIST C</span> <br> Documents that Establish Employment Authorization</td>
+          </thead>
+          <tbody>
+            <tr class="fs-5 fw-bold no-border">
+              <td ></td>
+              <td class="grey">OR</td>
+              <td colspan="2" class="text-center">AND</td>
+            </tr>
+            <tr>
+              <td>
+                <ol>
+                  <li>U.S. Passport or U.S. Passport Card</li>
+                  <li>Permanent Resident Card or Alien Registration Receipt Card (Form I-551)</li>
+                  <li>Foreign passport that contains a temporary I-551 stamp or temporary I-551 printed notation on a machine- readable immigrant visa</li>
+                  <li>Employment Authorization Document that contains a photograph (Form
+                    I-766)</li>
+                  <li>For a nonimmigrant alien authorized to work for a specific employer because of his or her status:
+                    <ol type="A">
+                      <li>Foreign passport; and</li>
+                      <li>Form I-94 or Form I-94A that has the following:
+                        <ol>
+                          <li>The same name as the passport; and</li>
+                          <li>An endorsement of the alien's nonimmigrant status as long as that period of endorsement has not yet expired and the proposed employment is not in conflict with any restrictions or limitations identified on the form.</li>
+                        </ol>
+                      </li>
+                    </ol>
+                    </li>
+                  <li>Passport from the Federated States of Micronesia (FSM) or the Republic of the Marshall Islands (RMI) with Form I-94 or Form I-94A indicating nonimmigrant admission under the
+                    Compact of Free Association Between the United States and the FSM or RMI
+                    </li>
+                </ol>
+              </td>
+              <td class="grey"></td>
+              <td>
+                <ol>
+                  <li>Driver's license or ID card issued by a State or outlying possession of the United States provided it contains a photograph or information such as name, date of birth, gender, height, eye color, and address</li>
+                  <li>ID card issued by federal, state or local government agencies or entities, provided it contains a photograph or information such as name, date of birth, gender, height, eye color, and address</li>
+                  <li>School ID card with a photograph</li>
+                  <li>Voter's registration card</li>
+                  <li>U.S. Military card or draft record</li>
+                  <li>Military dependent's ID card</li>
+                  <li>U.S. Coast Guard Merchant Mariner Card</li>
+                  <li>Native American tribal document</li>
+                  <li>Driver's license issued by a Canadian government authority</li>
+                  <li>School record or report card</li>
+                  <p class="big text-center fw-bold pb-5">For persons under age 18 who are unable to present a document listed above:</p>
+                  <li>Clinic, doctor, or hospital record</li>
+                  <li>Day-care or nursery school record</li>
+                </ol>
+              </td>
+              <td style="vertical-align: top;">
+                <ol>
+                  <li>A Social Security Account Number card, unless the card includes one of the following restrictions:
+                    <ol>
+                      <li>NOT VALID FOR EMPLOYMENT</li>
+                      <li>VALID FOR WORK ONLY WITH INS AUTHORIZATION</li>
+                      <li>VALID FOR WORK ONLY WITH DHS AUTHORIZATION</li>
+                    </ol>
+                  </li>
+                  <li>Certification of report of birth issued by the Department of State (Forms DS-1350, FS-545, FS-240)</li>
+                  <li>Original or certified copy of birth certificate issued by a State, county, municipal authority, or territory of the United States bearing an official seal</li>
+                  <li>Native American tribal document</li>
+                  <li>U.S. Citizen ID Card (Form I-197)</li>
+                  <li>Identification Card for Use of Resident Citizen in the United States (Form I-179)</li>
+                  <li>Employment authorization document issued by the Department of Homeland Security</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
