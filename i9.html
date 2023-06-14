@@ -157,7 +157,7 @@
               </div>
               <div class="input">
                 <label for="sec1-employee-email">Employee's Email Address</label>
-                <input type="text" id="sec1-employee-email" name="employee-email">
+                <input type="email" id="sec1-employee-email" name="employee-email">
               </div>
               <div class="input">
                 <label for="sec1-employee-phone">Employee's Telephone Number</label>
@@ -206,7 +206,7 @@
                   4. An alien authorized to work until (expiration date, if applicable, mm/dd/yyyy):<br> 
                   Some aliens may write "N/A" in the expiration date field. (See instructions)
                 </label>
-                <input class="underline" style="margin-left: 2.3em;" type="text" id="sec1-alien-exp-date" name="alien-exp-date">
+                <input class="underline" style="margin-left: 2.3em;" type="date" id="sec1-alien-exp-date" name="alien-exp-date">
               </div>
               <div class="p-3 pb-0">
                 <p>Aliens authorized to work must provide only one of the following document numbers to complete Form I-9:<br>
@@ -244,8 +244,8 @@
               <input class="plain" type="text" id="sec1-employee-signature" name="employee-signature">
             </div>
             <div class="d-flex flex-column flex-grow-1">
-              <label for="sec1-date-employee-signed">Today's Date <i>(mm/dd/yyyy)</i></label>
-              <input class="plain" type="text" id="sec1-date-employee-signed" name="date-employee-signed">
+              <label for="sec1-date-employee-signed">Today's Date<i> (mm/dd/yyyy)</i></label>
+              <input class="plain" type="date" id="sec1-date-employee-signed" name="date-employee-signed">
             </div>
           </div>
         </form>
@@ -285,7 +285,7 @@
                 </div>
                 <div class="d-flex flex-column flex-grow-1">
                   <label for="sec1-date-preparer-signed">Today's Date <i>(mm/dd/yyyy)</i></label>
-                  <input class="plain" type="text" id="sec1-date-preparer-signed" name="date-preparer-signed">
+                  <input class="plain" type="date" id="sec1-date-preparer-signed" name="date-preparer-signed">
                 </div>
               </div>
               <div class="d-flex">
@@ -494,7 +494,7 @@
                         <label for="employer-expiration-a">Expiration Date
                           <i>(if any) (mm/dd/yyyy)</i>
                         </label>
-                        <input id="employer-expiration-a" name="employer-expiration-a" type="text" class="underline">
+                        <input id="employer-expiration-a" name="employer-expiration-a" type="date" class="underline">
                       </div>
                     </td>
                     <td>
@@ -502,7 +502,7 @@
                         <label  for="employer-expiration-b">Expiration Date
                           <i>(if any) (mm/dd/yyyy)</i>
                         </label>
-                        <input id="employer-expiration-b" name="employer-expiration-b" type="text" class="underline">
+                        <input id="employer-expiration-b" name="employer-expiration-b" type="date" class="underline">
                       </div>
                     </td>
                     <td>
@@ -510,7 +510,7 @@
                         <label  for="employer-expiration-c">Expiration Date
                           <i>(if any) (mm/dd/yyyy)</i>
                         </label>
-                        <input id="employer-expiration-c" name="employer-expiration-c" type="text" class="underline">
+                        <input id="employer-expiration-c" name="employer-expiration-c" type="date" class="underline">
                       </div>
                     </td>
                   </tr>
@@ -553,7 +553,7 @@
                     <td>
                       <div style="border-bottom-width: 4px;">
                         <label for="employer-expiration-a-2">Expiration Date <i>(if any) (mm/dd/yyyy)</i></label>
-                        <input id="employer-expiration-a-2" name="employer-expiration-a-2" type="text" class="underline">
+                        <input id="employer-expiration-a-2" name="employer-expiration-a-2" type="date" class="underline">
                       </div>
                     </td>
                   </tr>
@@ -585,7 +585,7 @@
                     <td>
                       <div class="border-b-0">
                         <label for="employer-expiration-a-3">Expiration Date <i>(if any) (mm/dd/yyyy)</i></label>
-                        <input id="employer-expiration-a-3" name="employer-expiration-a-3" type="text" class="underline">
+                        <input id="employer-expiration-a-3" name="employer-expiration-a-3" type="date" class="underline">
                       </div>
                     </td>
                   </tr>
@@ -600,7 +600,7 @@
             </strong></p>
           <div class="d-flex align-items-end gap-3">
             <label for="employee-date-of-employment"><strong>The employee's first day of employment (mm/dd/yyyy):</strong></label>
-            <input id="employee-date-of-employment" name="employee-date-of-employment" type="text" class="underline">
+            <input id="employee-date-of-employment" name="employee-date-of-employment" type="date" class="underline">
             <strong><i>(See instructions for exemptions)</i></strong>
           </div>
           <div class="border-2 border-dark border my-3" style="border-top: 0 !important;">
@@ -610,8 +610,8 @@
                 <input class="plain" type="text" id="employer-signature" name="employer-signature">
               </div>
               <div class="input">
-                <label for="employer-sign-date">Today's Date<i>(mm/dd/yyyy)</i></label>
-                <input class="plain" type="text" id="employer-sign-date" name="employer-sign-date">
+                <label for="employer-sign-date">Today's Date <i>(mm/dd/yyyy)</i></label>
+                <input class="plain" type="date" id="employer-sign-date" name="employer-sign-date">
               </div>
               <div class="input">
                 <label for="employer-title">Title of Employer or Authorized Representative</i></label>
@@ -742,7 +742,7 @@
                 <div >
                   <div class="input" style="border-left: 2px solid black;">
                     <label for="employee-reverification-date">Date <i>(mm/dd/yyyy)</i></label>
-                    <input type="text" id="employee-reverification-date" name="employee-reverification-date">
+                    <input type="date" id="employee-reverification-date" name="employee-reverification-date">
                   </div>
                 </div>
               </div>
@@ -760,7 +760,7 @@
                 </div>
                 <div class="input">
                   <label for="employee-expiration-date">Expiration Date <i>(if any) (mm/dd/yyyy)</i></label>
-                  <input type="text" id="employee-expiration-date" name="employee-expiration-date">
+                  <input type="date" id="employee-expiration-date" name="employee-expiration-date">
                 </div>
               </div>
             </div>
@@ -773,8 +773,8 @@
                   <input class="plain" type="text" id="employer-signature-2" name="employer-signature-2">
                 </div>
                 <div class="input">
-                  <label for="employer-sign-date-2">Today's Date<i>(mm/dd/yyyy)</i></label>
-                  <input class="plain" type="text" id="employer-sign-date-2" name="employer-sign-date-2">
+                  <label for="employer-sign-date-2">Today's Date <i>(mm/dd/yyyy)</i></label>
+                  <input class="plain" type="date" id="employer-sign-date-2" name="employer-sign-date-2">
                 </div>
                 <div class="input">
                   <label for="employer-name-2">Name of Employer or Authorized Representative</label>
