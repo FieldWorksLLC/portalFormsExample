@@ -107,7 +107,6 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:checked + label::before {
   content: "☑";
-  /* background: #fff; */
 }
 
 input.plain {

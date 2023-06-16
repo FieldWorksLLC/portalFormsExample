@@ -1,0 +1,232 @@
+/* Class Utilities */
+
+.text-small {
+  font-size: .8em !important;
+}
+
+.b-2 {
+  border: 2px solid black !important;
+}
+
+.b-r-2 {
+  border-right: 2px solid black !important;
+}
+
+.b-t-2 {
+  border-top: 2px solid black !important;
+}
+
+.b-b-2 {
+  border-bottom: 2px solid black !important;
+}
+
+.b-l-2 {
+  border-left: 2px solid black !important;
+}
+
+.b-x-2 {
+  border-left: 2px solid black !important;
+  border-right: 2px solid black !important;
+}
+
+.b-y-2 {
+  border-top: 2px solid black !important;
+  border-bottom: 2px solid black !important;
+}
+
+.b-r-0 {
+  border-right: 0px !important;
+}
+
+.b-t-0 {
+  border-top: 0px !important;
+}
+
+.b-b-0 {
+  border-bottom: 0px !important;
+}
+
+.b-l-0 {
+  border-left: 0px !important;
+}
+
+.b-0 {
+  border: 0px !important;
+}
+
+/* Element Styles */
+:root {
+  font-size: 20px;
+}
+
+
+form label {
+  padding: 4px .7em;
+  position: relative;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form textarea,
+form select {
+  display: block;
+  border: 0px;
+  padding: 3px 4px;
+  outline: none;
+  background: #f2f4ff;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  background-color: transparent;
+}
+
+
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+input[type="radio"] + label {
+  display: flex;
+  padding: 0;
+}
+
+input[type="radio"] + label::before,
+input[type="radio"].after + label::after {
+  content: "□";
+  font-size: 1.5em;
+  line-height: .8;
+  background: #f2f4ff;
+  display: block;
+  width: 19px;
+  height: 18px;
+  margin-right: .3em;
+  border-radius: 3px;
+}
+
+input[type="radio"].after + label::after {
+  align-self: flex-end;
+  margin-bottom: .4em;
+}
+
+input[type="radio"].after + label::before {
+ display: none;
+}
+
+input[type="radio"]:checked + label::before,
+input[type="radio"].after:checked + label::after  {
+  content: "☑";
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* font-family: serif; */
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4em !important;
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+h4 {
+  font-size: 1.25em !important;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-style: italic;
+}
+
+p {
+  margin-bottom: .5rem;;
+}
+
+ol {
+  padding-left: 1em;
+}
+
+table {
+  border-color: #000;
+  width: 100%;
+}
+
+
+/* Specitfic Sections Styles */
+form .input {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input.underline {
+  border-bottom: 1px solid #000 !important;
+}
+
+form .input:first-child {
+  border-left: 0px;
+}
+
+form .input {
+  flex-grow: 1;
+}
+
+form .input input {
+  width: 100%;
+}
+
+.cash {
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+.cash::before {
+  content: "$ ";
+  padding-top: .3em;
+  padding-right: .3em;
+}
+
+.cash.no-underline {
+  border-bottom: 0px !important;
+}
+
+input.plain {
+  background-color: transparent !important;
+}
+
+ol.no-indent {
+  padding-left: 0 !important; 
+}
+
+.no-indent label {
+  padding: 0 !important; 
+}
+
+#tables td {
+  /* direction: rtl; */
+  text-align: right;
+  padding: 1px;
+  padding-right: 5px;
+}
+
+#tables h4 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#tables tr:nth-child(n + 12) td:first-child {
+  text-align: left;
+}
