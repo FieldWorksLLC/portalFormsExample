@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/css/government-forms.css"> -->
+  <link rel="stylesheet" href="css/w4.css">
+
+  <title>Form W-4</title>
+</head>
+<body class="my-5">
+  <div class="container">
+    <!-- Form Title Section-->
+    <header class="d-flex justify-content-between b-b-2 text-small" style="border-width: 3px !important">
+      <div style="flex-basis: 16em;">
+        <div class="mb-4">
+          <span>Form</span>
+          <span class="fw-bold" style="font-size: 4em;font-weight: 900;line-height: .7;">W-4</span>
+        </div>
+        <p class="mb-2">Department of the Treasury Internal Revenue Service</p>
+      </div>
+      <div style="border-width: 3px !important" class="b-x-2 px-2 text-center flex-grow-1 fw-medium">
+        <h1 >Employee’s Withholding Certificate</h1>
+        <p class="mb-0">Complete Form W-4 so that your employer can withhold the correct federal income tax from your pay. Give Form W-4 to your employer.</p>
+        <p class="mb-2">Your withholding is subject to review by the IRS.</p>
+      </div>
+      <div class="text-center d-flex flex-column" style="flex-basis: 16em;">
+        <p class="b-b-2 mb-0 pb-2" style="font-size: 1.1em;border-width: 3px !important">OMB No. 1545-0074</p>
+        <strong class="fw-bold flex-grow-1 d-flex align-items-center justify-content-center" style="font-size: 3em;"><span style="-webkit-text-stroke: 2px #000;color: #fff;">20</span>23</strong>
+      </div>
+    </header>
+  
+    <main>
+      <section>
+        <form>
+          <!-- Step 1-->
+          <div id="step-1">
+            <div class="d-flex b-b-2">
+              <h2 class="pe-2 b-r-2 py-1 pr-2 d-flex mb-0 gap-2 flex-column" style="flex-basis: 5.5em;">
+                <span>Step 1:<br></span>
+                <span>Enter Personal Information</span>
+              </h2>
+              <div class="text-small flex-grow-1">
+                <div class="d-flex b-b-2">
+                  <div class="input b-r-2">
+                    <label for="firstname" class="d-flex gap-3"><span class="fw-bold">(a)</span> First name and middle initial</label>
+                    <input type="text" id="firstname" name="firstname">
+                  </div>
+                  <div class="input b-r-2">
+                    <label for="lastname">Last name</label>
+                    <input type="text" id="lastname" name="lastname">
+                  </div>
+                  <div class="input" style="max-width: 18em;">
+                    <label for="ssn" class="d-flex gap-3"><span class="fw-bold">(b)</span> <strong>Social security number</strong></label>
+                    <input type="text" id="ssn" name="ssn">
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <div class="flex-grow-1 b-b-2 b-r-2">
+                    <div class="input b-b-2">
+                      <label for="address">Address</label>
+                      <input type="text" id="address" name="address">
+                    </div>
+                    <div class="input">
+                      <label for="city-state-zip">City or town, state, and ZIP code</label>
+                      <input type="text" id="city-state-zip" name="city-state-zip">
+                    </div>
+                  </div>
+                  <div style="width: 18em;" class="b-b-2">
+                    <p class="px-2 py-1 mb-0"><strong>Does your name match the name on your social security card?</strong> If not, to ensure you get credit for your earnings, contact SSA at 800-772-1213 or go to <a href="http://www.ssa.gov" target="_blank" rel="noopener noreferrer">www.ssa.gov</a>.</p>
+                  </div>
+                </div>
+                <div class="d-flex gap-3 px-2 py-1">
+                  <span class="fw-bold">(c)</span>
+                  <div class="d-flex flex-column gap-2">
+                    <div>
+                      <input type="radio" id="single" name="marital-status" value="single">
+                      <label class="mt-0" for="single"><span>
+                        <strong>Single</strong> or <strong>Married filing separately</strong>
+                      </span></label>
+                    </div>
+                    <div>
+                      <input type="radio" id="married" name="marital-status" value="married">
+                      <label for="married"><span>
+                        <strong>Married filing jointly</strong> or <strong>Qualifying surviving spouse</strong>
+                      </span></label>
+                    </div>
+                    <div>
+                      <input type="radio" id="head" name="marital-status" value="head-of-household">
+                      <label for="head"><span>
+                        <strong class="d-inline">Head of household</strong> (Check only if you’re unmarried and pay more than half the costs of keeping up a home for yourself and a qualifying individual.)
+                      </span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-3 b-b-2">
+              <p class="my-0">
+               <strong> Complete Steps 2–4 ONLY if they apply to you; otherwise, skip to Step 5.</strong> See page 2 for more information on each step, who can claim exemption from withholding, other details, and privacy.
+              </p>
+            </div>
+          </div>
+  
+          <!-- Step 2 -->
+          <div id="step-2" class="b-b-2">
+            <div class="d-flex">
+              <h2 class="pe-2 py-1 pr-2 flex-shrink-0 me-4 d-flex mb-0 gap-2 flex-column" style="width: 6.6em;">
+                <span>Step 2:<br></span>
+                <span>Multiple Jobs or Spouse Works</span>
+              </h2>
+              <div class="flex-grow-1 py-1">
+                <p>Complete this step if you (1) hold more than one job at a time, or (2) are married filing jointly and your spouse also works. The correct amount of withholding depends on income earned from all of these jobs.</p>
+                <p class="mb-0">Do <strong>only one</strong> of the following.</p>
+                <ol type="A">
+                  <li>Reserved for future use.</li>
+                  <li>Use the Multiple Jobs Worksheet on page 3 and enter the result in Step 4(c) below; <strong>or</strong></li>
+                  <li class="">
+                    <input type="radio" class="after" id="two-jobs" name="two-jobs" value="two-jobs">
+                    <label for="two-jobs">If there are only two jobs total, you may check this box. Do the same on Form W-4 for the other job. This option is generally more accurate than (b) if pay at the lower paying job is more than half of the pay at the higher paying job. Otherwise, (b) is more accurate . . . . . . . . . . . . . . . . . . . . . . . . . </label>
+                  </li>
+                </ol>
+                <p><b>TIP:</b> If you have self-employment income, see page 2.</p>
+              </div>
+            </div>
+            <p><strong>Complete Steps 3–4(b) on Form W-4 for only ONE of these jobs.</strong> Leave those steps blank for the other jobs. (Your withholding will be most accurate if you complete Steps 3–4(b) on the Form W-4 for the highest paying job.)</p>
+          </div>
+          <div id="step-3" class="b-b-2">
+            <div class="d-flex">
+              <h2 class="pe-2 py-1 flex-shrink-0 pr-2 me-4 d-flex mb-0 gap-2 flex-column" style="width: 6.6em;">
+                <span>Step 3:<br></span>
+                <span>Claim Dependent and Other Credits</span>
+              </h2>
+              <div class="flex-grow-1 pt-1 pe-4">
+                <p>If your total income will be $200,000 or less ($400,000 or less if married filing jointly):</p>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex align-items-center">
+                    <label for="child-tax-credit" class="flex-grow-1" for="child-tax-credit">Multiply the number of qualifying children under age 17 by $2,000</label>
+                    <span style="flex-basis: 10em;" class="cash">
+                      <input id="child-tax-credit" name="child-tax-credit" type="text" id="child-tax-credit" name="child-tax-credit">
+                    </span>
+                  </div>
+                  <div class="d-flex">
+                    <label class="flex-grow-1" for="dependents-tax-credit">Multiply the number of other dependents by $500 . . . .  .</label>
+                    <span for="dependents-tax-credit" style="flex-basis: 10em;" class="cash">
+                      <input id="dependents-tax-credit" name="dependents-tax-credit" type="text" id="dependents-tax-credit" name="dependents-tax-credit">
+                    </span>
+                  </div>
+                </div>
+                <label for="total-tax-credit" class="mb-0 mt-2 p-0">Add the amounts above for qualifying children and other dependents. You may add to this the amount of any other credits. Enter the total here . . . . . . . .</label>
+              </div>
+              <strong style="flex-basis: 2.7em;" class="flex-shrink-0 d-flex b-x-2 justify-content-center align-items-end">3</strong>
+              <div style="flex-basis:8.5em;" class="flex-shrink-0 ps-1 cash no-underline align-items-end">
+                <input type="text" id="total-tax-credit" name="total-tax-credit">
+              </div>
+            </div>
+
+          </div>
+          <div id="step-4" class="b-b-2">
+            <div class="d-flex mb-4">
+              <h2 class="pe-2 py-1 flex-shrink-0 pr-2 me-4 d-flex mb-0 gap-2 flex-column" style="width: 6.6em;">
+                <span>Step 4 (optional):<br></span>
+                <span>Other Adjustments</span>
+              </h2>
+              <div class="flex-grow-1 no-indent">
+                <div class="d-flex">
+                  <label  for="other-income" class="flex-grow-1 mt-2 d-flex gap-2 me-4" for="">
+                    <b>(a)</b>
+                    <span>
+                      <strong>Other income (not from jobs).</strong> If you want tax withheld for other income you expect this year that won’t have withholding, enter the amount of other income here. This may include interest, dividends, and retirement income
+                    </span>
+                  </label>
+                  <strong style="flex-basis: 2.7em;" class="flex-shrink-0 b-b-2 d-flex b-x-2 justify-content-center align-items-end">4(a)</strong>
+                  <div style="flex-basis:8.5em;" class="flex-shrink-0 ps-1 cash align-items-end">
+                    <input class="" type="text" id="other-income" name="other-income">
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label for="other-deductions" class="flex-grow-1 mt-4 d-flex gap-2 me-4" for="">
+                    <b>(b)</b>
+                    <span>
+                      <strong>Deductions.</strong> If you expect to claim deductions other than the standard deduction and want to reduce your withholding, use the Deductions Worksheet on page 3 and enter the result here
+                    </span>
+                  </label>
+                  <strong style="flex-basis: 2.7em;" class="flex-shrink-0 b-b-2 d-flex b-x-2 justify-content-center align-items-end">4(b)</strong>
+                  <div style="flex-basis:8.5em;" class="flex-shrink-0 ps-1 cash align-items-end">
+                    <input class="" type="text" id="other-deductions" name="other-deductions">
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <label for="extra-withholding" class="flex-grow-1 mt-4 d-flex gap-2 me-4" for="">
+                    <b>(c)</b>
+                    <span>
+                      <strong>Extra withholding.</strong> Enter any additional tax you want withheld each <strong>pay period</strong>
+                    </span>
+                  </label>
+                  <strong style="flex-basis: 2.7em;" class="flex-shrink-0 b-b-2 d-flex b-x-2 justify-content-center align-items-end">4(c)</strong>
+                  <div style="flex-basis:8.5em;" class="flex-shrink-0 ps-1 cash align-items-end">
+                    <input class="" type="text" id="extra-withholding" name="extra-withholding">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="step-5">
+            <div class="d-flex b-b-2">
+              <h2 class="pe-2 b-r-2 py-1 pr-2 d-flex mb-0 gap-2 flex-column" style="flex-basis: 5.5em;">
+                <span>Step 5:<br></span>
+                <span>Sign Here</span>
+              </h2>
+              <div class="flex-grow-1 py-3 ps-2">
+                <p class="mb-4 text-small">Under penalties of perjury, I declare that this certificate, to the best of my knowledge and belief, is true, correct, and complete.</p>
+                <div class="d-flex gap-5">
+                  <div class="input">
+                    <input id="employee-signature" name="employee-signature" class="plain b-b-2" type="text" name="" id="">
+                    <label for="employee-signature"><strong>Employee’s signature</strong> (This form is not valid unless you sign it.)</label>
+                  </div>
+                  <div class="input">
+                    <input id="date-signature-signed" name="date-signature-signed" class="plain b-b-2" type="date" name="" id="">
+                    <label for="date-signature-signed"><strong>Date</strong></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex b-b-2">
+            <h2 class="pe-2 b-r-2 py-1 pr-2 d-flex flex-shrink-0 mb-0 gap-2 flex-column" style="flex-basis: 5.5em;">
+              <span>Employers Only</span>
+            </h2>
+            <div class="flex-grow-1 d-flex">
+              <div class="input b-r-2" style="flex-basis: 50%">
+                <label for="employer-name-address">Employer’s name and address</label>
+                <textarea id="employer-name-address" name="employer-name-address" style="height: 4.5em;"></textarea>
+              </div>
+              <div class="input  b-r-2">
+                <label for="date-of-employment">First date of employment</label>
+                <input id="date-of-employment" name="date-of-employment" type="date">
+              </div>
+              <div class="input">
+                <label for="EIN">Employer identification number (EIN)</label>
+                <input id="EIN" name="EIN" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between text-small">
+            <p class="fw-bold">For Privacy Act and Paperwork Reduction Act Notice, see page 3.</p>
+            <span>Cat. No. 10220Q</span>
+            <span>Form <strong style="font-size: 1.4em;">W-4</strong> (2023)</span>
+          </div>
+        </form>
+      </section>
+      <hr class="b-b-2 mt-5" style="opacity: 1;">
+      <!-- Instructions Page -->
+      <section id="instructions" class="d-flex gap-5 mt-5 pb-4 b-b-2">
+        <div>
+          <h2>General Instructions</h2>
+          <p>Section references are to the Internal Revenue Code.</p>
+          <h3>Future Developments</h3>
+          <p>For the latest information about developments related to Form W-4, such as legislation enacted after it was published, go to <a href="http://www.irs.gov/FormW4" target="_blank" rel="noopener noreferrer">www.irs.gov/FormW4</a>.</p>
+          <h3>Purpose of Form</h3>
+          <p>Complete Form W-4 so that your employer can withhold the correct federal income tax from your pay. If too little is withheld, you will generally owe tax when you file your tax return and may owe a penalty. If too much is withheld, you will generally be due a refund. Complete a new Form W-4 when changes to your personal or financial situation would change the entries on the form. For more information on withholding and when you must furnish a new Form W-4, see Pub. 505, Tax Withholding and Estimated Tax.</p>
+          <p><strong>Exemption from withholding.</strong> You may claim exemption from withholding for 2023 if you meet both of the following conditions: you had no federal income tax liability in 2022 <strong>and</strong> you expect to have no federal income tax liability in 2023. You had no federal income tax liability in 2022 if (1) your total tax on line 24 on your 2022 Form 1040 or 1040-SR is zero (or less than the sum of lines 27, 28, and 29), or (2) you were not required to file a return because your income was below the filing threshold for your correct filing status. If you claim exemption, you will have no income tax withheld from your paycheck and may owe taxes and penalties when you file your 2023 tax return. To claim exemption from withholding, certify that you meet both of the conditions above by writing “Exempt” on Form W-4 in the space below Step 4(c). Then, complete Steps 1(a), 1(b), and 5. Do not complete any other steps. You will need to submit a new Form W-4 by February 15, 2024.</p>
+          <p><strong>Your privacy.</strong> If you have concerns with Step 2(c), you may choose Step 2(b); if you have concerns with Step 4(a), you may enter an additional amount you want withheld per pay period in Step 4(c).</p>
+          <p><strong>Self-employment.</strong> Generally, you will owe both income and self-employment taxes on any self-employment income you receive separate from the wages you receive as an employee. If you want to pay income and self-employment taxes through withholding from your wages, you should enter the self-employment income on Step 4(a). Then compute your self-employment tax, divide that tax by the number of pay periods remaining in the year, and include that resulting amount per pay period on Step 4(c). You can also add half of the annual amount of self-employment tax to Step 4(b) as a deduction. To calculate self-employment tax, you generally multiply the self-employment income by 14.13% (this rate is a quick way to figure your self-employment tax and equals the sum of the 12.4% social security tax and the 2.9% Medicare tax multiplied by 0.9235). See Pub. 505 for more information, especially if the sum of self-employment income multiplied by 0.9235 and wages exceeds $160,200 for a given individual.</p>
+          <p><strong>Nonresident alien.</strong> If you’re a nonresident alien, see Notice 1392, Supplemental Form W-4 Instructions for Nonresident Aliens, before completing this form.</p>
+        </div>
+        <div>
+          <h2>Specific Instructions</h2>
+          <p><strong>Step 1(c).</strong> Check your anticipated filing status. This will determine the standard deduction and tax rates used to compute your withholding.</p>
+          <p><strong>Step 2.</strong> Use this step if you (1) have more than one job at the same time, or (2) are married filing jointly and you and your spouse both work.</p>
+          <p style="text-indent: 1em;">If you (and your spouse) have a total of only two jobs, you may check the box in option (c). The box must also be checked on the Form W-4 for the other job. If the box is checked, the standard deduction and tax brackets will be cut in half for each job to calculate withholding. This option is roughly accurate for jobs with similar pay; otherwise, more tax than necessary may be withheld, and this extra amount will be larger the greater the difference in pay is between the two jobs.</p>
+          <div class="d-flex gap-3 align-items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width: 8em;margin-top: .4em;" width="70" viewBox="0 0 63 71"><path d="M0 0h63v71H0z"/><path fill="#fff" d="M31.5 2.235 2.6 52.29h57.8Z"/><path d="M28.92 41.331v5.161h5.161v-5.161Zm4.789-17.806V13.3h-4.417v10.229l1.164 14.455h2.09Z"/><path fill="#fff" d="M9.085 61.838h1.976a3.741 3.741 0 0 0-.442-1.43 3.478 3.478 0 0 0-.89-1.047 3.924 3.924 0 0 0-1.222-.643 4.677 4.677 0 0 0-1.45-.218 4.688 4.688 0 0 0-1.918.377A4.1 4.1 0 0 0 3.7 59.914a4.637 4.637 0 0 0-.9 1.553 5.8 5.8 0 0 0-.306 1.933 5.606 5.606 0 0 0 .312 1.889 4.517 4.517 0 0 0 .9 1.528 4.109 4.109 0 0 0 1.434 1.02 4.76 4.76 0 0 0 1.917.371 4.572 4.572 0 0 0 1.573-.26 3.647 3.647 0 0 0 1.248-.754A3.768 3.768 0 0 0 10.736 66a4.719 4.719 0 0 0 .4-1.573H9.163a2.645 2.645 0 0 1-.643 1.506 1.889 1.889 0 0 1-1.463.567 2.383 2.383 0 0 1-1.17-.266 2.232 2.232 0 0 1-.78-.709 3.074 3.074 0 0 1-.435-.994 4.725 4.725 0 0 1-.137-1.131 5.079 5.079 0 0 1 .137-1.183 3.133 3.133 0 0 1 .435-1.021 2.209 2.209 0 0 1 .78-.715 2.383 2.383 0 0 1 1.17-.266 2.122 2.122 0 0 1 .721.123 2.1 2.1 0 0 1 .618.345 2.052 2.052 0 0 1 .455.513 1.667 1.667 0 0 1 .234.642Zm5.785 2.574 1.209-3.406h.026l1.17 3.406Zm.195-5.694L11.555 68h2.054l.728-2.067h3.471L18.51 68h2.119l-3.471-9.282Zm14.248 5.772v-5.772h-2.041v5.772a2.322 2.322 0 0 1-.416 1.528 1.912 1.912 0 0 1-1.508.488 2.351 2.351 0 0 1-.994-.176 1.507 1.507 0 0 1-.579-.455 1.5 1.5 0 0 1-.273-.644 4.207 4.207 0 0 1-.065-.741v-5.772H21.4v5.772a3.55 3.55 0 0 0 1.03 2.81 4.274 4.274 0 0 0 2.918.91 4.289 4.289 0 0 0 2.912-.918 3.518 3.518 0 0 0 1.053-2.802Zm3.809-4.056V68h2.041v-7.566h2.782v-1.716h-7.6v1.716Zm5.889-1.716V68h2.041v-9.282Zm5.473 4.682a5.079 5.079 0 0 1 .137-1.183 3.133 3.133 0 0 1 .435-1.021 2.209 2.209 0 0 1 .78-.715 2.383 2.383 0 0 1 1.17-.266 2.383 2.383 0 0 1 1.17.266 2.209 2.209 0 0 1 .78.715 3.133 3.133 0 0 1 .436 1.021 5.079 5.079 0 0 1 .136 1.183 4.725 4.725 0 0 1-.136 1.138 3.074 3.074 0 0 1-.436.994 2.232 2.232 0 0 1-.78.709 2.383 2.383 0 0 1-1.17.266 2.383 2.383 0 0 1-1.17-.266 2.232 2.232 0 0 1-.78-.709 3.074 3.074 0 0 1-.435-.994 4.725 4.725 0 0 1-.137-1.138Zm-2.041 0a5.606 5.606 0 0 0 .312 1.892 4.518 4.518 0 0 0 .9 1.528 4.109 4.109 0 0 0 1.437 1.02 4.76 4.76 0 0 0 1.917.371 4.747 4.747 0 0 0 1.921-.374 4.123 4.123 0 0 0 1.43-1.02 4.518 4.518 0 0 0 .9-1.528 5.606 5.606 0 0 0 .309-1.889 5.8 5.8 0 0 0-.312-1.93 4.637 4.637 0 0 0-.9-1.553 4.116 4.116 0 0 0-1.43-1.04 4.676 4.676 0 0 0-1.921-.377 4.688 4.688 0 0 0-1.917.377 4.1 4.1 0 0 0-1.437 1.04 4.637 4.637 0 0 0-.9 1.553 5.8 5.8 0 0 0-.309 1.93Zm10.517-4.682V68h1.911v-6.214h.029L58.758 68H60.8v-9.282h-1.912v6.227h-.026l-3.874-6.227Z"/></svg>
+            <p>Multiple jobs. Complete Steps 3 through 4(b) on only one Form W-4. Withholding will be most accurate if you do this on the Form W-4 for the highest paying job.</p>
+          </div>
+          <p><strong>Step 3.</strong> This step provides instructions for determining the amount of the child tax credit and the credit for other dependents that you may be able to claim when you file your tax return. To qualify for the child tax credit, the child must be under age 17 as of December 31, must be your dependent who generally lives with you for more than half the year, and must have the required social security number. You may be able to claim a credit for other dependents for whom a child tax credit can’t be claimed, such as an older child or a qualifying relative. For additional eligibility requirements for these credits, see Pub. 501, Dependents, Standard Deduction, and Filing Information. You can also include <strong>other tax credits</strong> for which you are eligible in this step, such as the foreign tax credit and the education tax credits. To do so, add an estimate of the amount for the year to your credits for dependents and enter the total amount in Step 3. Including these credits will increase your paycheck and reduce the amount of any refund you may receive when you file your tax return.</p>
+          <p class="mb-0"><strong>Step 4 (optional).</strong></p>
+          <p><strong>Step 4(a).</strong> Enter in this step the total of your other estimated income for the year, if any. You shouldn’t include income from any jobs or self-employment. If you complete Step 4(a), you likely won’t have to make estimated tax payments for that income. If you prefer to pay estimated tax rather than having tax on other income withheld from your paycheck, see Form 1040-ES, Estimated Tax for Individuals.</p>
+          <p><strong>Step 4(b).</strong> Enter in this step the amount from the Deductions Worksheet, line 5, if you expect to claim deductions other than the basic standard deduction on your 2023 tax return and want to reduce your withholding to account for these deductions. This includes both itemized deductions and other deductions such as for student loan interest and IRAs.</p>
+          <p><strong>Step 4(c).</strong> Enter in this step any additional tax you want withheld from your pay <strong>each pay period</strong>, including any amounts from the Multiple Jobs Worksheet, line 4. Entering an amount here will reduce your paycheck and will either increase your refund or reduce any amount of tax that you owe.</p>
+        </div>
+        <div></div>
+      </section>
+
+      <section id="multiple-jobs">
+        <form>
+          <div class="b-b-2">
+            <div class="d-flex py-1 py-1 b-b-2 text-center align-items-center">
+              <p class="mb-0 flex-grow-1" style="font-size: 1.2em;padding-left: 2.7em;">
+                <strong>Step 2(b)—Multiple Jobs Worksheet</strong> 
+                <i>(Keep for your records.)</i>
+              </p>
+              <img style="width: 2.7em;" width="200" src="/pen.png" alt="">
+            </div>
+            <div class="py-2">
+              <p>If you choose the option in Step 2(b) on Form W-4, complete this worksheet (which calculates the total extra tax for all jobs) on <strong>only ONE</strong> Form W-4. Withholding will be most accurate if you complete the worksheet and enter the result on the Form W-4 for the highest paying job. To be accurate, submit a new Form W-4 for all other jobs if you have not updated your withholding since 2019.</p>
+              <p><strong>Note:</strong> If more than one job has annual wages of more than $120,000 or there are more than three jobs, see Pub. 505 for additional tables.</p>
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex align-items-end ps-4 gap-3">
+                  <strong style="align-self: flex-start;padding-top: .2em">1</strong>
+                  <label for="worksheet-two-jobs"><strong>Two jobs.</strong> If you have two jobs or you’re married filing jointly and you and your spouse each have one job, find the amount from the appropriate table on page 4. Using the “Higher Paying Job” row and the“Lower Paying Job” column, find the value at the intersection of the two household salaries and enter that value on line 1. Then, <strong>skip</strong> to line 3 . . . . . . . . . .</label>
+                  <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                    <strong>1</strong>
+                    <div class="cash">
+                      <input id="worksheet-two-jobs" name="worksheet-two-jobs" type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-end ps-4 gap-3">
+                  <strong style="align-self: flex-start;">2</strong>
+                  <div class="flex-grow-1 d-flex flex-column gap-2">
+                    <p class="mb-0"><strong>Three jobs.</strong> If you and/or your spouse have three jobs at the same time, complete lines 2a, 2b, and 2c below. Otherwise, skip to line 3.</p>
+                    <div class="d-flex gap-2">
+                      <strong>a</strong>
+                      <label for="worksheet-three-jobs-a" class="pb-0">Find the amount from the appropriate table on page 4 using the annual wages from the highest paying job in the “Higher Paying Job” row and the annual wages for your next highest paying job in the “Lower Paying Job” column. Find the value at the intersection of the two household salaries and enter that value on line 2a . . . . . . . . . .</label>
+                      <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                        <strong>2a</strong>
+                        <div class="cash">
+                          <input id="worksheet-three-jobs-a" name="worksheet-three-jobs-a" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <strong>b</strong>
+                      <label for="worksheet-three-jobs-b" class="pb-0">Add the annual wages of the two highest paying jobs from line 2a together and use the total as the wages in the “Higher Paying Job” row and use the annual wages for your third job in the “Lower Paying Job” column to find the amount from the appropriate table on page 4 and enter this amount on line 2b . . . . . . . . . .</label>
+                      <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                        <strong>2b</strong>
+                        <div class="cash">
+                          <input id="worksheet-three-jobs-b" name="worksheet-three-jobs-b" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <strong>c</strong>
+                      <label for="worksheet-three-jobs-total" class="flex-grow-1 pb-0">Add the amounts from lines 2a and 2b and enter the result on line 2c . . . . . . . . . .</label>
+                      <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                        <strong>2c</strong>
+                        <div class="cash">
+                          <input id="worksheet-three-jobs-total" name="worksheet-three-jobs-total" type="text">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-end ps-4 gap-3">
+                  <strong style="align-self: flex-start;padding-top: .2em">3</strong>
+                  <label for="no-of-pay-periods">Enter the number of pay periods per year for the highest paying job. For example, if that job pays
+                  weekly, enter 52; if it pays every other week, enter 26; if it pays monthly, enter 12, etc. . . . . .
+                  </label>
+                  <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                    <strong>3</strong>
+                    <input id="no-of-pay-periods" name="no-of-pay-periods" class="b-b-2" type="text">
+                  </div>
+                </div>
+                <div class="d-flex align-items-end ps-4 gap-3">
+                  <strong style="align-self: flex-start;padding-top: .2em">4</strong>
+                  <label for="multiple-jobs-quotient"><strong>Divide</strong> the annual amount on line 1 or line 2c by the number of pay periods on line 3. Enter this amount here and in <strong>Step 4(c)</strong> of Form W-4 for the highest paying job (along with any other additional amount you want withheld) . . . . .
+                  </label>
+                  <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                    <strong>4</strong>
+                    <div class="cash">
+                      <input id="multiple-jobs-quotient" name="multiple-jobs-quotient" type="text">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex py-1 py-1 b-b-2 text-center align-items-center">
+              <p class="mb-0 flex-grow-1" style="font-size: 1.2em;padding-left: 2.7em;">
+                <strong>Step 4(b)—Deductions Worksheet</strong> 
+                <i>(Keep for your records.)</i>
+              </p>
+              <img style="width: 2.7em;" width="200" src="/pen.png" alt="">
+            </div>
+            <div class="d-flex align-items-end gap-3">
+              <strong style="align-self: flex-start;padding-top: .2em">1</strong>
+              <label for="deductions-estimate">Enter an estimate of your 2023 itemized deductions (from Schedule A (Form 1040)). Such deductions may include qualifying home mortgage interest, charitable contributions, state and local taxes (up to $10,000), and medical expenses in excess of 7.5% of your income . . . . . . . . . .</label>
+              <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                <strong>1</strong>
+                <div class="cash">
+                  <input id="deductions-estimate" name="deductions-estimate" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <strong style="padding-top: .2em">2</strong>
+              <label for="deductions-2" class="d-flex flex-grow-1 gap-4 align-items-center">
+                <span>Enter:</span> 
+                <div class="d-flex gap-3 align-items-center">
+                  <span style="font-size: 5em;font-weight: 200;line-height: 0;margin-top: -.13em">{</span>
+                  <ul class="py-0 ps-3 mb-0">
+                    <li>$27,700 if you’re married filing jointly or a qualifying surviving spouse</li>
+                    <li>$20,800 if you’re head of household</li>
+                    <li>$13,850 if you’re single or married filing separately</li>
+                  </ul>
+                  <span style="font-size: 5em;font-weight: 200;line-height: 0;margin-top: -.13em">}</span>
+                </div> 
+                <span>. . . . . . . . . . .</span>
+              </label>
+              <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                <strong>2</strong>
+                <div class="cash">
+                  <input id="deductions-2" name="deductions-2" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <strong style="align-self: flex-start;padding-top: .2em">3</strong>
+              <label for="deductions-3">If line 1 is greater than line 2, subtract line 2 from line 1 and enter the result here. If line 2 is greater than line 1, enter “-0-” . . . . . . . . . .</label>
+              <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                <strong>3</strong>
+                <div class="cash">
+                  <input id="deductions-3" name="deductions-3" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-3">
+              <strong style="align-self: flex-start;padding-top: .2em">4</strong>
+              <label for="deductions-4">Enter an estimate of your student loan interest, deductible IRA contributions, and certain other adjustments (from Part II of Schedule 1 (Form 1040)). See Pub. 505 for more information</label>
+              <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                <strong>4</strong>
+                <div class="cash">
+                  <input id="deductions-4" name="deductions-4" type="text">
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items gap-3">
+              <strong style="align-self: flex-start;padding-top: .2em">5</strong>
+              <label for="deductions-5" class="flex-grow-1"><strong>Add</strong> lines 3 and 4. Enter the result here and in <strong>Step 4(b)</strong> of Form W-4 . . . . . . . . . .</label>
+              <div class="d-flex flex-shrink-0 gap-3 align-items-end mb-2" style="flex-basis: 13em;">
+                <strong>5</strong>
+                <div class="cash">
+                  <input id="deductions-5" name="deductions-5" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-small d-flex gap-5 mt-0 b-t-2 pt-3">
+            <p style="flex-basis: 50%;" class="flex-grow-0"><strong>Privacy Act and Paperwork Reduction Act Notice.</strong> We ask for the information on this form to carry out the Internal Revenue laws of the United States. Internal Revenue Code sections 3402(f)(2) and 6109 and their regulations require you to provide this information; your employer uses it to determine your federal income tax withholding. Failure to provide a properly completed form will result in your being treated as a single person with no other entries on the form; providing fraudulent information may subject you to penalties. Routine uses of this information include giving it to the Department of Justice for civil and criminal litigation; to cities, states, the District of Columbia, and U.S. commonwealths and territories for use in administering their tax laws; and to the Department of Health and Human Services for use in the National Directory of New Hires. We may also disclose this information to other countries under a tax treaty, to federal and state agencies to enforce federal nontax criminal laws, or to federal law enforcement and intelligence agencies to combat terrorism.</p>
+            <div style="flex-basis: 50%;" class="flex-grow-0">
+              <p style="text-indent: 1em;">You are not required to provide the information requested on a form that is subject to the Paperwork Reduction Act unless the form displays a valid OMB control number. Books or records relating to a form or its instructions must be retained as long as their contents may become material in the administration of any Internal Revenue law. Generally, tax returns and return information are confidential, as required by Code section 6103.</p>
+              <p style="text-indent: 1em;">The average time and expenses required to complete and file this form will vary depending on individual circumstances. For estimated averages, see the instructions for your income tax return.</p>
+              <p style="text-indent: 1em;">If you have suggestions for making this form simpler, we would be happy to hear from you. See the instructions for your income tax return.</p>
+            </div>
+          </div>
+          
+        </form>
+      </section>
+      <section id="tables" class="py-3 b-t-2 mt-5" style="border-width: 3px !important;">
+        <h4>Married Filing Jointly or Qualifying Surviving Spouse</h4>
+        <table style="border-collapse:collapse;margin-left:5.5px" cellspacing="0">
+          <tr style="height:12px">
+            <td style="width: 9.8em;text-align:center;font-weight:bold;border-top-style:solid;border-top-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px"
+              rowspan="2">
+              Higher Paying
+                Job Annual Taxable Wage &amp; Salary</td>
+            <td style="text-align:center;font-weight:bold;border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px"
+              colspan="12">
+              Lower
+                Paying Job Annual Taxable Wage &amp; Salary</td>
+          </tr>
+          <tr style="height:23px">
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$0 - 9,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$10,000 - 19,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$20,000 - 29,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$30,000 - 39,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$40,000 - 49,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$50,000 - 59,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$60,000 - 69,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$70,000 - 79,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$80,000 - 89,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$90,000 - 99,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$100,000 - 109,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">$110,000 - 120,000    </td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$0 - 9,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$0</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$0</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$850</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$850</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,000</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">$1,870</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$10,000 - 19,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">0</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">930</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">1,850</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,000</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,200</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,200</td>
+            <td style="border-left-style:solid;border-left-width: 2px">4,070</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$20,000 - 29,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">850</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">1,850</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">2,920</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,120</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,320</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,340</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,340</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,340</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,340</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,320</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">5,320</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">6,190</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$30,000 - 39,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">850</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,000</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,120</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,320</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,520</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,540</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,540</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,540</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,520</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">5,520</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,520</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">7,390</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$40,000 - 49,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">1,000</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,200</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,320</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,520</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,740</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,740</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">5,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">7,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px">8,590</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$50,000 - 59,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">1,020</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,340</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,540</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,740</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,760</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">5,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">6,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">7,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">9,610</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$60,000 - 69,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,340</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,540</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,740</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">5,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">7,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">8,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">9,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">10,610</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$70,000 - 79,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">1,020</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,340</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">3,540</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">5,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">7,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">8,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">9,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">10,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px">11,610</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$80,000 - 99,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">1,020</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,170</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">5,370</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">6,570</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">7,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">9,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">10,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">11,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">12,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">13,460</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$100,000 - 149,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,070</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,190</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">7,390</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">8,590</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">9,610</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">10,610</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,660</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">12,860</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">14,060</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">15,260</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">16,330</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$150,000 - 239,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,440</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,760</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">8,160</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">9,560</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">10,780</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">13,180</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">14,380</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">15,580</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">16,780</td>
+            <td style="border-left-style:solid;border-left-width: 2px">17,850</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$240,000 - 259,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">2,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,440</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">6,760</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,160</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">9,560</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">10,780</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">11,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">13,180</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">14,380</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">15,580</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">16,780</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">17,850</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$260,000 - 279,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,040</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,440</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,760</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">8,160</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">9,560</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">10,780</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,980</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">13,180</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">14,380</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">15,580</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">16,780</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">18,140</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$280,000 - 299,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,440</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,760</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">8,160</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">9,560</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">10,780</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">13,180</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">14,380</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">15,870</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">17,870</td>
+            <td style="border-left-style:solid;border-left-width: 2px">19,740</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$300,000 - 319,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">2,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,440</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">6,760</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,160</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">9,560</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">10,780</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">11,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">13,470</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">15,470</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">17,470</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">19,470</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">21,340</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$320,000 - 364,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,040</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">4,440</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,760</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">8,550</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">10,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">12,770</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">14,770</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">16,770</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">18,770</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">20,770</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">22,770</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">24,640</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$365,000 - 524,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">2,970</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">6,470</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">9,890</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">12,390</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">14,890</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">17,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">19,520</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">21,820</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">24,120</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">26,420</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">28,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px">30,880</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$525,000 and over    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,140</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">6,840</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">10,460</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">13,160</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">15,860</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">18,390</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">20,890</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">23,390</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">25,890</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">28,390</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">30,890</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">33,250</td>
+          </tr>
+        </table>
+        <h4>Single or Married Filing Separately</h4>
+        <table style="border-collapse:collapse;margin-left:5.5px" cellspacing="0">
+          <tr style="height:12px">
+            <td style="width: 9.8em;text-align:center;font-weight:bold;border-top-style:solid;border-top-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px"
+              rowspan="2">
+              Higher Paying
+                Job Annual Taxable Wage &amp; Salary</td>
+            <td style="text-align:center;font-weight:bold;border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px"
+              colspan="12">
+              Lower
+                Paying Job Annual Taxable Wage &amp; Salary</td>
+          </tr>
+          <tr style="height:24px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$0 - 9,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$10,000 - 19,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$20,000 - 29,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$30,000 - 39,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$40,000 - 49,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$50,000 - 59,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$60,000 - 69,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$70,000 - 79,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$80,000 - 89,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$90,000 - 99,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$100,000 - 109,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">$110,000 - 120,000    </td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$0 - 9,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$310</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$890</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,860</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$2,030</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">$2,040</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$10,000 - 19,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              890</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,630</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,760</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,960</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              3,970</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$20,000 - 29,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">1,020</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">1,750</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">1,880</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">2,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,730</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,730</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,890</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">5,090</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">5,290</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">5,300</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$30,000 - 39,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,720</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,720</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,720</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,720</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,730</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,890</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,090</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,290</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,490</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">
+              6,500</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$40,000 - 59,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,710</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,450</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,570</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,570</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,570</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,700</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,910</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,110</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,310</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,510</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,710</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              8,720</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$60,000 - 79,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">1,870</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,600</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">4,730</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">5,860</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">7,060</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,260</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,460</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,660</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,860</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">9,060</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">9,260</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">9,280</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$80,000 - 99,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,730</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,060</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,260</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,460</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,660</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,860</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,060</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,260</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,460</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              10,430</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">
+              11,240</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$100,000 - 124,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,970</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,300</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,500</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,700</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,900</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,110</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">10,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              12,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              13,430</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$125,000 - 149,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">2,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,970</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">5,300</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">6,500</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">7,700</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">9,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">10,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">11,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">12,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">13,610</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">14,900</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">16,020</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$150,000 - 174,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,040</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,970</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,610</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,610</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,610</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,610</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              12,610</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              13,750</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">15,050</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">16,350</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              17,650</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">
+              18,770</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$175,000 - 199,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,450</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,580</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,580</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,580</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">13,870</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              15,180</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              16,480</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">17,780</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">19,080</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              20,380</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              21,490</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$200,000 - 249,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">2,900</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">5,930</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">8,360</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">10,660</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">12,960</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">15,260</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">16,570</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">17,870</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">19,170</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">20,470</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">21,770</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">22,880</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$250,000 - 399,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,970</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,010</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,440</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              10,740</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">13,040</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">15,340</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              16,640</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              17,940</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">19,240</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">20,540</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              21,840</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">
+              22,960</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$400,000 - 449,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,970</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,010</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,440</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              10,740</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">13,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">15,340</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              16,640</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              17,940</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">19,240</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">20,540</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              21,840</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              22,960</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$450,000 and over    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,140</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">6,380</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">9,010</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">11,510</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">14,010</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">16,510</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">18,010</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">19,510</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">21,010</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">22,510</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">24,010</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">25,330</td>
+          </tr>
+        </table>
+        <h4>Head of Household</h4>
+        <table style="border-collapse:collapse;margin-left:5.5px" cellspacing="0">
+          <tr style="height:12px">
+            <td style="width: 9.8em;text-align:center;font-weight:bold;border-top-style:solid;border-top-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px"
+              rowspan="2">
+              Higher Paying
+                Job Annual Taxable Wage &amp; Salary</td>
+            <td style="text-align:center;font-weight:bold;border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px"
+              colspan="12">
+              Lower
+                Paying Job Annual Taxable Wage &amp; Salary</td>
+          </tr>
+          <tr style="height:24px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$0 - 9,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$10,000 - 19,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$20,000 - 29,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$30,000 - 39,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$40,000 - 49,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$50,000 - 59,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$60,000 - 69,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$70,000 - 79,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$80,000 - 89,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$90,000 - 99,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$100,000 - 109,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">$110,000 - 120,000    </td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$0 - 9,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$0</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$620</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$860</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,650</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">$1,890</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">$2,040</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$10,000 - 19,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              620</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,630</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,060</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,850</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,850</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,070</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,090</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,290</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              4,440</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$20,000 - 29,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              860</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,060</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,490</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,650</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,650</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,280</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,280</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,280</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,520</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,920</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">
+              6,070</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$30,000 - 39,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,220</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,650</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,810</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,440</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,440</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,440</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,460</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,880</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,080</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,280</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">
+              7,430</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$40,000 - 59,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,020</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,220</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,130</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,290</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,290</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,290</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,480</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,680</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,100</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,300</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,500</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              9,650</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$60,000 - 79,999    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,500</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              3,700</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,130</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,290</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,480</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,680</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,880</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              11,080</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">11,500</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">11,700</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              11,900</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">
+              12,050</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$80,000 - 99,999    </td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              1,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,070</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,690</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,050</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,250</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,450</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              10,650</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              11,850</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">12,260</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">12,460</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              12,870</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">
+              13,820</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$100,000 - 124,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,440</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,070</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,430</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,630</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,830</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              11,030</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              12,230</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">13,190</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">14,190</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              15,190</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              16,150</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$125,000 - 149,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,040</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,440</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,070</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,430</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,630</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              11,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              13,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">15,190</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">16,190</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              17,270</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">
+              18,530</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$150,000 - 174,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,040</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              4,440</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,070</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,980</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,980</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,980</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              13,980</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              15,980</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">17,420</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">18,720</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              20,020</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">
+              21,280</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-right-style:solid;border-right-width: 2px">$175,000 - 199,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,190</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              5,390</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              7,820</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">11,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">14,060</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              16,360</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              18,660</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">20,170</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">21,470</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              22,770</td>
+            <td style="border-left-style:solid;border-left-width: 2px">
+              24,030</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$200,000 - 249,999</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,720</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,190</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              8,920</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              11,380</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">13,680</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">15,980</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              18,280</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              20,580</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">22,090</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">23,390</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">
+              24,690</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">
+              25,950</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-top-style:solid;border-top-width: 2px;border-right-style:solid;border-right-width: 2px">$250,000 - 449,999</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              2,970</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              6,470</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              9,200</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              11,660</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">13,960</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">16,260</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              18,560</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              20,860</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">22,380</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">23,680</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px;border-right-style:solid;border-right-width: 2px">
+              24,980</td>
+            <td style="border-top-style:solid;border-top-width: 2px;border-left-style:solid;border-left-width: 2px">
+              26,230</td>
+          </tr>
+          <tr style="height:12px">
+            <td style="border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">$450,000 and over    </td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">3,140</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">6,840</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">9,770</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">12,430</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">14,930</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">17,430</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">19,930</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">22,430</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">24,150</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">25,650</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px;border-right-style:solid;border-right-width: 2px">27,150</td>
+            <td style="border-left-style:solid;border-left-width: 2px;border-bottom-style:solid;border-bottom-width: 2px">28,600</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
