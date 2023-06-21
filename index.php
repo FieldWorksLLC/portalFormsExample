@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$fileToLoad = 'i9 render.html';
+$fileToLoad = 'w4 render.html';
 
 $mpdf = new \Mpdf\Mpdf();
 $mpdf->WriteHTML(file_get_contents($fileToLoad));
