@@ -374,7 +374,7 @@
         </form>
         <div class="d-flex align-items-center justify-content-center" style="margin: 6em 0;">
           <img src="/stop.svg" width="40" alt="">
-          <span class="d-inline-block px-5 mx-2 fs-5" style="background-color: #c0c1c4;font-family: serif;"><i>Employer Completes Next Page</i></span>
+          <span class="px-5 mx-2 d-inline-block fs-5" style="background-color: #c0c1c4;font-family: serif;"><i>Employer Completes Next Page</i></span>
           <img src="/stop.svg" width="40" alt="">
         </div>
       </section>
@@ -385,11 +385,11 @@
         <form>
           <!-- Employer or Authorized Representative Review and Verification -->
           <div>
-            <div class="border-2 border border-dark p-2 bg-grey">
+            <div class="p-2 border border-2 border-dark bg-grey">
               <h2 class="fs-4">Section 2. Employer or Authorized Representative Review and Verification</h2>
-              <p class="fst-italic mb-0">(Employers or their authorized representative must complete and sign Section 2 within 3 business days of the employee's first day of employment. You must physically examine one document from List A OR a combination of one document from List B and one document from List C as listed on the "Lists of Acceptable Documents.")</p>
+              <p class="mb-0 fst-italic">(Employers or their authorized representative must complete and sign Section 2 within 3 business days of the employee's first day of employment. You must physically examine one document from List A OR a combination of one document from List B and one document from List C as listed on the "Lists of Acceptable Documents.")</p>
             </div>
-            <div class="d-flex border-3 border-dark border" style="border-top: 0px !important;">
+            <div class="border d-flex border-3 border-dark" style="border-top: 0px !important;">
               <div class="input border-top-0 d-flex align-items-center justify-content-center">
                 <strong>Employee Info from Section 1</strong>
               </div>
@@ -425,7 +425,7 @@
                 </tr>
               </thead>
             </table>
-            <table id="employer-lists" style="width: 100%" class="border-2 border-dark border">
+            <table id="employer-lists" style="width: 100%" class="border border-2 border-dark">
               <tbody>
                 <div class="">
                   <tr>
@@ -522,13 +522,13 @@
                       </div>
                     </td>
                     <td colspan="3" rowspan="8" style="border: 2px solid black; border-top-width: 4px; border-right: 0; border-bottom: 0;padding: 1em;">
-                      <div class="border-0 d-flex gap-2">
+                      <div class="gap-2 border-0 d-flex">
                         <div class="d-flex flex-column justify-content-between" style="flex-basis: 60%;height: 30em;border: 2px solid black;">
                           <label for="employer-additional-info" class="d-block">Additional Information</label>
                           <textarea id="employer-additional-info" name="employer-additional-info" class="flex-grow" style="height: 93%;border:0;"></textarea>
                         </div>
                         <div class="flex-grow-1" style="border: 2px solid black;height: 20em">
-                          <p class="small text-center">QR Code - Sections 2 & 3 <br> Do Not Write In This Space</label>
+                          <p class="text-center small">QR Code - Sections 2 & 3 <br> Do Not Write In This Space</label>
                         </div>
                       </div>
                     </td>
@@ -598,12 +598,12 @@
           <p class="my-2 mt-4"><strong>Certification: I attest, under penalty of perjury, that (1) I have examined the document(s) presented by the above-named employee,
             (2) the above-listed document(s) appear to be genuine and to relate to the employee named, and (3) to the best of my knowledge the employee is authorized to work in the United States.
             </strong></p>
-          <div class="d-flex align-items-end gap-3">
+          <div class="gap-3 d-flex align-items-end">
             <label for="employee-date-of-employment"><strong>The employee's first day of employment (mm/dd/yyyy):</strong></label>
             <input id="employee-date-of-employment" name="employee-date-of-employment" type="date" class="underline">
             <strong><i>(See instructions for exemptions)</i></strong>
           </div>
-          <div class="border-2 border-dark border my-3" style="border-top: 0 !important;">
+          <div class="my-3 border border-2 border-dark" style="border-top: 0 !important;">
             <div class="d-flex">
               <div class="input" style="flex-bais: 30%;">
                 <label for="employer-signature">Signature of Employer or Authorized Representative</label>
@@ -641,7 +641,7 @@
                 <label for="employer-city">City or Town</label>
                 <input type="text" id="employer-city" name="employer-city">
               </div>
-              <div class="input flex-grow-0" style="width:100px">
+              <div class="flex-grow-0 input" style="width:100px">
                 <label for="employer-state">State</label>
                 <select name="employer-state" id="employer-state">
                   <option value="" selected="selected"></option>
@@ -711,11 +711,11 @@
       <section id="section-3" class="mb-5">
         <form>
           <div class="d-flex flex-column">
-            <div class="border-2 border border-dark p-2 bg-grey " style="border-bottom: 0 !important;">
-              <h2 class="fs-4 d-inline-block mr-2 mb-0">Section 3. Reverification and Rehires</h2>
-              <p class="big fst-italic mb-0 d-inline">(To be completed and signed by employer or authorized representative.)</p>
+            <div class="p-2 border border-2 border-dark bg-grey " style="border-bottom: 0 !important;">
+              <h2 class="mb-0 mr-2 fs-4 d-inline-block">Section 3. Reverification and Rehires</h2>
+              <p class="mb-0 big fst-italic d-inline">(To be completed and signed by employer or authorized representative.)</p>
             </div>
-            <div class="d-flex border-2 border border-dark">
+            <div class="border border-2 d-flex border-dark">
               <div class="d-flex flex-column"style="flex-basis: 70%;" >
                 <div>
                   <p class="sub-item"><span class="fw-bold">A.</span> New Name (if applicable)</p>
@@ -747,7 +747,7 @@
                 </div>
               </div>
             </div>
-            <div class="border-2 border border-dark my-3">
+            <div class="my-3 border border-2 border-dark">
               <p class="sub-item"><span class="fw-bold">C.</span> If the employee's previous grant of employment authorization has expired, provide the information for the document or receipt that establishes continuing employment authorization in the space provided below.</p>
               <div class="d-flex">
                 <div class="input">
@@ -766,7 +766,7 @@
             </div>
             <p class="mb-3"><strong>I attest, under penalty of perjury, that to the best of my knowledge, this employee is authorized to work in the United States, and if the employee presented document(s), the document(s) I have examined appear to be genuine and to relate to the individual.
             </strong></p>
-            <div class="border-2 border-dark border" style="border-top: 0 !important;">
+            <div class="border border-2 border-dark" style="border-top: 0 !important;">
               <div class="d-flex">
                 <div class="input" style="flex-bais: 30%;">
                   <label for="employer-signature-2">Signature of Employer or Authorized Representative</label>
@@ -790,12 +790,12 @@
 
       <!-- Documents List-->
       <section id="documents-list" class="my-5">
-        <div class="text-center mb-5">
+        <div class="mb-5 text-center">
           <h2 class="fs-3">LISTS OF ACCEPTABLE DOCUMENTS <br>All documents must be UNEXPIRED</h2>
           <p class="big">Employees may present one selection from List A <br>
             or a combination of one selection from List B and one selection from List C.</p>
         </div>
-        <table class="border-2 border-dark border">
+        <table class="border border-2 border-dark">
           <thead class="text-center">
             <th style="width: 33%;">
               <span class="fs-5">LIST A </span><br>Documents that Establish Both Identity and Employment Authorization
@@ -849,7 +849,7 @@
                   <li>Native American tribal document</li>
                   <li>Driver's license issued by a Canadian government authority</li>
                   <li>School record or report card</li>
-                  <p class="big text-center fw-bold pb-5">For persons under age 18 who are unable to present a document listed above:</p>
+                  <p class="pb-5 text-center big fw-bold">For persons under age 18 who are unable to present a document listed above:</p>
                   <li>Clinic, doctor, or hospital record</li>
                   <li>Day-care or nursery school record</li>
                 </ol>
