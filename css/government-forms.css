@@ -67,6 +67,8 @@ form label {
 }
 
 form input[type="text"],
+form input[type="email"],
+form input[type="date"],
 form textarea,
 form select {
   display: block;
@@ -105,7 +107,6 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:checked + label::before {
   content: "☑";
-  /* background: #fff; */
 }
 
 input.plain {
@@ -149,22 +150,6 @@ table td {
 .ssn input:nth-of-type(3) {
   width: 6.9em !important;
   background-image: repeating-linear-gradient(to right, transparent, transparent 25%, #000 25%, #000 26.5%);
-}
-
-.bracket-num {
-  list-style: none;
-}
-
-.bracket-num> li:before {
-  counter-increment: e2 ;
-}
-.bracket-num> li:before {
-  counter-increment: e2;
-  content: "(2). ";
-  color: #231F20;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
 }
 
 #status-part-1 > div {
