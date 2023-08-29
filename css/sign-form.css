@@ -7,6 +7,11 @@
     src: url("/fonts/HerrVonMuellerhoff-Regular.ttf");
 }
 
+/*disable lastpass icon*/
+div[data-lastpass-icon-root] {
+    display: none !important;
+}
+
 /* general */
 .max-100 {max-width: 100px;}
 .max-125 {max-width: 125px;}
@@ -19,45 +24,74 @@
     width: 30px;
     height: 30px;
 }
+.disable-click {
+    pointer-events: none;
+}
+.company-name a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
 
 
 /*sign form form*/
-.sign-form legend {
-    /* padding: 20px; */
+body.page-sign-form-i9 .container,
+body.page-sign-form-w4 .container
+{
+    width: 1320px !important;
 }
-
+.sign-form legend {
+    padding: 20px;
+}
+.js-disable-form-fields {
+    pointer-events:none;
+    background:grey;
+}
 .sign-form legend p.legend-heading {
     font-weight: bold;
 }
 .sign-form legend p.legend-sub-heading {
     font-size: .8em;
 }
-.sign-form label .main, .sign-form input, .sign-form select, .sign-form textarea {
-    font-size: 1.1em;
+.sign-form label, .sign-form input, .sign-form select, .sign-form textarea {
+    font-size: .8em;
 }
-
-.sign-form label .main {
-    display: inline-block;
-    margin-bottom: 5px !important;
+.sign-form .col-form-label {
 }
-
+fieldset.address-container {
+    background: #f8f8f8;
+    border-radius: 3px;
+}
 .sign-form input:required,
 .sign-form .is-invalid,
-.sign-form textarea:required,
-.sign-form select:required {
+.sign-form textarea:required {
     background: #ffff7f42;
+}
+.sign-form input[type="text"]:read-only,
+.sign-form select:read-only {
+    background: rgb(210 215 217 / 40%) !important;
+}
+.sign-form select:required {
+    /*handle select arrow bug*/
+    background: #ffff7f42;
+    -moz-appearance: revert;
+    -webkit-appearance: auto;
+    appearance: auto;
 }
 .sign-form .just-validate-success-field {
     background: unset !important;
 }
-
+input.form-check-input {
+    height: 15px;
+    width: 15px;
+    background-color: #edf4fb;
+}
 input.form-control.textfield_underline {
     /*background: none;*/
     border: none;
     border-bottom: 1px solid black;
     border-radius: unset;
-    padding: 0px 5px 0px 5px;
-    width: auto;
+    padding: 5px 5px 0px 5px;
 }
 .row {
     margin: 10px 0 10px 0;
@@ -107,7 +141,7 @@ input.form-control.textfield_underline {
     /*overflow: hidden;*/
 }
 .signature-collector-input-container .signature-input {
-    font-family: "HerrVon";
+    font-family: "HerrVon", Sans-serif !important;
     font-size: 60px;
     text-indent: 40px;
     border: none !important;
@@ -235,6 +269,7 @@ input.input-num-verify {
         position: unset;
     }
     .company-name {text-align: center}
+
     .signature-collector-input-container {
         height: 115px;
         overflow: hidden;
@@ -247,7 +282,17 @@ input.input-num-verify {
 @media (min-width: 375px) {
     body.page-sign-form .container {
         width: unset;
+        /*width: 1000px;*/
     }
     .mobile-hide-375 {display: block;}
     .mobile-375 {display: none;}
+}
+
+.address-autocomplete {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.address-autocomplete .ui-menu-item {
+    padding: 5px;
+    font-size: 12px;
 }
