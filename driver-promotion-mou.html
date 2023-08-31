@@ -24,20 +24,12 @@
     <div class="row">
       <form class="p-3 mb-5 main sign-form form form-inline container-paper p-md-5" method="post">
         <input type="hidden" name="form_key" id="form_key"
-          value="2e28735d1ad88e2bde84514011074310" /><!--    <input type="hidden" name="debug" id="debug" value="debug"/>-->
-        <input type="hidden" name="form_entity_id" value="1" />
+          value="2e28735d1ad88e2bde84514011074310" ><!--    <input type="hidden" name="debug" id="debug" value="debug"/>-->
+        <input type="hidden" name="form_entity_id" value="1" >
         <div class="flex-wrap gap-2 d-flex justify-content-between align-items-top">
+          <h1 class="legend-heading mw-25">Driver Promotion Memorandum of Understanding</h1>
           <div class="">
-            <fieldset>
-              <legend>
-                <p class="legend-heading mw-25">Driver Promotion Memorandum of Understanding</p>
-              </legend>
-            </fieldset>
-          </div>
-          <div class="">
-            <fieldset>
-              <p>Fieldworks, LLC.</p>
-            </fieldset>
+            <p>Fieldworks, LLC.</p>
           </div>
         </div>
         <div style="margin-top: 4em;">
@@ -72,22 +64,22 @@
           <ul>
             <li>NO PERSONALLY OWNED VEHICLES MAY BE DRIVEN AT ANY TIME WHILE ON THE CLOCK. </li>
             <li>No use of cell phones or any handheld devices while operating the vehicle.</li>
-            <li>No drugs or alcohol are to be consumed prior to or during driving a vehicle. 
+            <li>No drugs or alcohol are to be consumed prior to or during driving a vehicle. </li>
             <li>No drugs or alcohol are to be consumed within the vehicle, even while parked.</li>
             <li>Everyone in the vehicle must wear a seatbelt.</li>
             <li>Accidents on work time, or in a rental vehicle at any time, even very small accidents, must be reported immediately to the office director and the police from the scene of the accident.</li>
             <li>Driver alone is responsible for any traffic violations or parking citations while operating the vehicle.</li>
             <li>FieldWorks is not responsible for reimbursing drivers for parking or tolls. Any special agreement for reimbursement of parking or tolls must be made with your office director in advance and you must provide a printed receipt (not handwritten).</li>
           </ul>
-          <h3 class="text-center mt-4">DRIVER TRAINING ACKNOWLEDGEMENT</h3>
+          <h2 class="text-center mt-4">DRIVER TRAINING ACKNOWLEDGEMENT</h2>
           <div class="acknowledgement">
             <input type="checkbox" id="acknowledge-read-training" name="acknowledge-read-training">
             <label for="acknowledge-read-training">I acknowledge that I have read and reviewed the FieldWorks Driver Training located at <a href="https://f.works/drivertraining">f.works/drivertraining</a></label>
           </div>
-          <h3 class="text-center mt-4">DRIVER LICENSE INFORMATION</h3>
-          <div class="acknowledgement" id="acknowledge-fieldwork-record-authorize" name="acknowledge-fieldwork-record-authorize">
-            <input type="checkbox" id="acknowledge-fieldwork-record-authorize">
-            <label>I authorize FieldWorks to obtain my complete driving record from the Department of Motor Vehicles in the state in which I am licensed to drive</a></label>
+          <h2 class="text-center mt-4">DRIVER LICENSE INFORMATION</h2>
+          <div class="acknowledgement">
+            <input type="checkbox" id="acknowledge-fieldwork-record-authorize" name="acknowledge-fieldwork-record-authorize">
+            <label for="acknowledge-fieldwork-record-authorize">I authorize FieldWorks to obtain my complete driving record from the Department of Motor Vehicles in the state in which I am licensed to drive</label>
           </div>
           <div class="d-flex gap-4 flex-wrap mt-5">
             <div class="d-flex gap-2 flex-wrap">
@@ -103,10 +95,10 @@
               <input id="license-exp" name="license-exp" type="text" class="form-control textfield_underline">
             </div>
           </div>
-          <h3 class="mt-5 mb-3">ACKNOWLEDGEMENTS</h3>
+          <h2 class="mt-5 mb-3">ACKNOWLEDGEMENTS</h2>
           <div class="acknowledgements">
             <div>
-              <input type="checkbox" class="form-control textfield_underline" id="acknowledge-tolls-reimbursement-policy" name="acknowledge-tolls-reimbursement-policy">
+              <input type="checkbox" id="acknowledge-tolls-reimbursement-policy" name="acknowledge-tolls-reimbursement-policy">
               <label for="acknowledge-tolls-reimbursement-policy">I understand that FieldWorks is not responsible for reimbursing drivers for parking or tolls. Any special agreement for reimbursement of parking or tolls must be made with your office director in writing in advance and you must provide a printed receipt (not handwritten).</label>
             </div>
             <div>
@@ -129,17 +121,17 @@
               <input type="checkbox" id="acknowledge-requirement-and-rules" name="acknowledge-requirement-and-rules">
               <label for="acknowledge-requirement-and-rules">I agree that I have read and will abide by the above requirements and rules. Any violation will result in immediate removal from driving, and could result in immediate termination from employment.</label>
             </div>
-          </div>  
+          </div>
         </div>
-        
+
         <div class="flex-wrap gap-3 form-group d-flex justify-content-between" style="margin-top: 7em;margin-bottom: 7em;">
           <div class="gap-2 d-flex gap-md-4 align-items-end">
             <label class="fw-bold" for="signature">Signature:</label>
-            <input type="text" id="signature" name="signature" class="form-control textfield_underline" />
+            <input type="text" id="signature" name="signature" class="form-control textfield_underline" >
           </div>
           <div class="gap-2 d-flex gap-md-4 align-items-end">
             <label class="fw-bold" for="date">Date:</label>
-            <input name="date" id="date" autocomplete="off" type="date" placeholder=""
+            <input name="date" id="date" autocomplete="off" type="date"
               class="form-control textfield_underline input-md" required>
           </div>
         </div>
@@ -153,84 +145,4 @@
     </div>
   </div>
 </body>
-
-<style>
-  .legend-heading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    max-width: 500px;
-  }
-  h2 {
-    margin-top: 2em;
-    margin-bottom: .7em;
-
-  }
-  li {
-    margin-bottom: .7em;
-  }
-
-  .acknowledgements div,
-  .acknowledgement {
-    /* display: flex; */
-    align-items: flex-end;
-    gap: 1em;
-    margin-bottom: 5px;
-  }
-
-  .acknowledgements input,
-  .acknowledgement input {
-    display: inline;
-    width: 2em !important;
-  }
-
-  .acknowledgements label,
-  .acknowledgement label {
-    display: inline;
-    margin-top: 3px;
-    position: relative;
-  }
-
-  .acknowledgements input,
-  .acknowledgement input {
-    position: absolute;
-    clip: rect(0,0,0,0)
-  }
-
-  .acknowledgements input + label::before,
-  .acknowledgement input + label::before {
-    content: "";
-    width: 2em;
-    border-bottom: 1px solid #000;
-    display: inline-block;
-    margin-right: .2em;
-  }
-
-  .acknowledgements input:checked + label::after,
-  .acknowledgement input:checked + label::after {
-    position: absolute;
-    content: "✓";
-    display: inline-block;
-    left: .5em; top: -.6em;
-    font-size: 1.2em;
-  } 
-
-  input {
-    background: none !important;
-  }
-
-  .list-split {
-    column-count: 2;
-  }
-
-  .list-split li {
-    margin-right: 1em;
-  }
-
-  @media (max-width: 600px) {
-    .list-split {
-      column-count: 1;
-    }
-  }
-</style>
-
 </html>
