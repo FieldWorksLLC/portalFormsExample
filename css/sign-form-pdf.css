@@ -1,6 +1,6 @@
 body {
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 14px;
+    font-size: 12px;
 }
 h1 {
     font-size: 22px;
@@ -57,4 +57,18 @@ span.signature-typed {
 }
 .text-center {
     text-align: center;
+}
+
+/*new stuff*/
+.underline {
+    display: inline-block;
+    width: 250px;
+    border-bottom: 1px solid black;
+}
+
+td.underline.small {
+    width: 60px;
+}
+.bold {
+    font-weight: bold;
 }
