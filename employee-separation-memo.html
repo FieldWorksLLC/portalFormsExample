@@ -25,85 +25,103 @@
     <div class="row">
       <form class="p-3 mb-5 main sign-form form form-inline container-paper p-md-5" method="post">
         <input type="hidden" name="form_key" id="form_key"
-          value="2e28735d1ad88e2bde84514011074310" /><!--    <input type="hidden" name="debug" id="debug" value="debug"/>-->
-        <input type="hidden" name="form_entity_id" value="1" />
+          value="2e28735d1ad88e2bde84514011074310">
+        <input type="hidden" name="form_entity_id" value="1">
         <div class="flex-wrap gap-2 d-flex justify-content-between align-items-top">
           <div class="">
-            <fieldset>
-              <legend>
-                <p class="legend-heading mw-25">Employee Separation Memo</p>
-              </legend>
-            </fieldset>
+            <h1 class="mw-25">Employee Separation Memo</h1>
           </div>
           <div class="">
-            <fieldset>
-              <p>Fieldworks, LLC.</p>
-            </fieldset>
+            <p>Fieldworks, LLC.</p>
           </div>
         </div>
         <div style="margin-top: 4em;">
-         <p>{{ TerminationDate }}</p>
-         <p>{{ EmployeeName }}</p>
-         <p>{{ Address }}</p>
-         <p>{{ City }}, {{ State }}, {{ ZIP }}</p>
-         <table>
-          <tr>
-            <td>Separation Date: </td>
-            <td>{{ TerminationDate }}</td>
-          </tr>
-          <tr>
-            <td>Last Date Worked: </td>
-            <td>{{ LastShift }}</td>
-          </tr>
-         </table>
-         <p>Separation Reason: {{ SeparationType }}-{{ SeparationResason }}</p>
-         <p>{{ SeparationNotes }}</p>
+          <p>{{ TerminationDate }}</p>
+          <p>{{ EmployeeName }}</p>
+          <p>{{ Address }}</p>
+          <p>{{ City }}, {{ State }}, {{ ZIP }}</p>
+          <table>
+            <tr>
+              <td>Separation Date: </td>
+              <td>{{ TerminationDate }}</td>
+            </tr>
+            <tr>
+              <td>Last Date Worked: </td>
+              <td>{{ LastShift }}</td>
+            </tr>
+          </table>
+          <p>Separation Reason: {{ SeparationType }}-{{ SeparationResason }}</p>
+          <p>{{ SeparationNotes }}</p>
 
-         <p>Thank you for working for FieldWorks.  This memo covers important information about your separation from the company.</p>
-         <p><strong>FUTURE CONTACT:</strong> For all matters moving forward, or any questions or concerns you have, please contact our national office.  Please do not return to the local office for any reason or contact the local office via phone or email.  All follow‐up issues you have will be handled by the national office, and not the local office.   </p>
-         <div class="text-center my-5">
-          <p><a href="http://https://fieldworks.com/contact‐us/" class="color-gray">https://fieldworks.com/contact‐us/ </a></p>
-          <p><a href="tel:+855‐603‐9729" class="text-decoration-none text-dark"><strong>855‐603‐9729</strong></a> Toll Free</p>
-          <p><a href="tel:+202‐899‐5717" class="text-decoration-none text-dark"><strong>202‐899‐5717</strong></a> Phone/Text</p>
-         </div>
-         <p><strong>AGREEMENTS AND CONFIDENTIALITY:</strong> As reminder even after your employment with FieldWorks has ended you are still bound by the staff and office policies you signed, including the confidentiality sections of the staff policies, which also includes the use of social media and talking to the press. </p>
-         <p><strong>FINAL PAYCHECK:</strong> You will be paid in full for any time worked for FieldWorks, including any bonuses earned.</p>
-         <p>Your final pay will be paid via the pay method you selected and will be processed on the next scheduled pay day</p>
-         <p><strong>UNEMPLOYMENT:</strong> When filing for unemployment it is critical that you use the official FieldWorks filing information including company name and address. You cannot use the local address of the office you worked in. If you do not use the correct information, your claim may be delayed or denied. Our unemployment claims administrator is: ADP Unemployment Services/Corporate Cost Control. </p>
-         <div class="text-center my-5">
-          <p>Company Name: {{ legal_company_name }}</p>
-          <p>Unemployment Account: {{ ui_account }}</p>
-          <p>Address and Contact Information:</p>
-          <p class="fw-bold">ADP Unemployment Services/Corporate Cost Control
-            PO Box 1390</p>
-          <p>Londonderry, NH 03053‐1390 <a href="http://ui@fieldworks.com">ui@fieldworks.com</a></p>
-          <p><a href="tel:+1‐800‐207‐6926" class="text-dark text-decoration-none fw-bold">1‐800‐207‐6926</a></p>
-         </div>
-         <p><strong>MEDICAL INSURANCE COBRA:</strong>  If you were enrolled in medical, vision, or dental insurance your coverage ends as of the date of your separation. You will receive paperwork in the mail in the next few weeks on how to extend that coverage. Our COBRA administrator is TASC. You may reach TASC with follow‐up questions at (800) 422‐4661.</p>
-         <p><strong>WAGE OR EMPLOYMENT VERIFICATIONS:</strong> All wage and employment verifications are handled by the <strong>The Work Number</strong>. Let the entity that needs the verification know that we use The Work Number and they will be able to access your information in real time. </p>
-         <div class="text-center my-5">
-          <p><a href="http://www.theworknumber.com">www.theworknumber.com </a></p>
-          <p><strong>Employer Code: 16034</strong></p>
-          <p>Commercial Verifications (car loan, apartment, etc)</p>
-          <p><a href="tel:800‐367‐5690" class="fw-bold text-decoration-none text-dark">800‐367‐5690 </a></p>
-          <p>Social Services Verifications (SNAP, Medicaid, TANF, etc) </p>
-         <p> <a href="tel:800‐660‐3399" class="fw-bold text-decoration-none text-dark">800‐660‐3399</a> </p>
-         </div>
-         <p><strong>WAGE STATEMENTS AND TAX FORMS:</strong> You can access all of your wage statements and past tax forms online at <a href="http://http://my.adp.com">http://my.adp.com</a>. You can setup your account on a web browser or by downloading the ADP Mobile App. Instructions for access are at <a href="http://http://wages.fieldworks.com">http://wages.fieldworks.com</a>.</p>
-         <p>A W‐2 form for this year will be postmarked by January 31 of next year.  It will be mailed to the address which appears on this form.  W2 forms are also available online on the ADP website listed below.</p>
-         <p><strong>ACKNOWLEDGEMENT OF RECEIPT</strong> <br>
-         I have received this document. 
-         </p>
+          <p>Thank you for working for FieldWorks. This memo covers important information about your separation from the
+            company.</p>
+          <p><strong>FUTURE CONTACT:</strong> For all matters moving forward, or any questions or concerns you have,
+            please contact our national office. Please do not return to the local office for any reason or contact the
+            local office via phone or email. All follow‐up issues you have will be handled by the national office, and
+            not the local office. </p>
+          <div class="text-center my-5">
+            <p><a href="http://https://fieldworks.com/contact‐us/" class="color-gray">https://fieldworks.com/contact‐us/
+              </a></p>
+            <p><a href="tel:+855‐603‐9729" class="text-decoration-none text-dark"><strong>855‐603‐9729</strong></a> Toll
+              Free</p>
+            <p><a href="tel:+202‐899‐5717" class="text-decoration-none text-dark"><strong>202‐899‐5717</strong></a>
+              Phone/Text</p>
+          </div>
+          <p><strong>AGREEMENTS AND CONFIDENTIALITY:</strong> As reminder even after your employment with FieldWorks has
+            ended you are still bound by the staff and office policies you signed, including the confidentiality
+            sections of the staff policies, which also includes the use of social media and talking to the press. </p>
+          <p><strong>FINAL PAYCHECK:</strong> You will be paid in full for any time worked for FieldWorks, including any
+            bonuses earned.</p>
+          <p>Your final pay will be paid via the pay method you selected and will be processed on the next scheduled pay
+            day</p>
+          <p><strong>UNEMPLOYMENT:</strong> When filing for unemployment it is critical that you use the official
+            FieldWorks filing information including company name and address. You cannot use the local address of the
+            office you worked in. If you do not use the correct information, your claim may be delayed or denied. Our
+            unemployment claims administrator is: ADP Unemployment Services/Corporate Cost Control. </p>
+          <div class="text-center my-5">
+            <p>Company Name: {{ legal_company_name }}</p>
+            <p>Unemployment Account: {{ ui_account }}</p>
+            <p>Address and Contact Information:</p>
+            <p class="fw-bold">ADP Unemployment Services/Corporate Cost Control
+              PO Box 1390</p>
+            <p>Londonderry, NH 03053‐1390 <a href="http://ui@fieldworks.com">ui@fieldworks.com</a></p>
+            <p><a href="tel:+1‐800‐207‐6926" class="text-dark text-decoration-none fw-bold">1‐800‐207‐6926</a></p>
+          </div>
+          <p><strong>MEDICAL INSURANCE COBRA:</strong> If you were enrolled in medical, vision, or dental insurance your
+            coverage ends as of the date of your separation. You will receive paperwork in the mail in the next few
+            weeks on how to extend that coverage. Our COBRA administrator is TASC. You may reach TASC with follow‐up
+            questions at (800) 422‐4661.</p>
+          <p><strong>WAGE OR EMPLOYMENT VERIFICATIONS:</strong> All wage and employment verifications are handled by the
+            <strong>The Work Number</strong>. Let the entity that needs the verification know that we use The Work
+            Number and they will be able to access your information in real time.
+          </p>
+          <div class="text-center my-5">
+            <p><a href="http://www.theworknumber.com">www.theworknumber.com </a></p>
+            <p><strong>Employer Code: 16034</strong></p>
+            <p>Commercial Verifications (car loan, apartment, etc)</p>
+            <p><a href="tel:800‐367‐5690" class="fw-bold text-decoration-none text-dark">800‐367‐5690 </a></p>
+            <p>Social Services Verifications (SNAP, Medicaid, TANF, etc) </p>
+            <p> <a href="tel:800‐660‐3399" class="fw-bold text-decoration-none text-dark">800‐660‐3399</a> </p>
+          </div>
+          <p><strong>WAGE STATEMENTS AND TAX FORMS:</strong> You can access all of your wage statements and past tax
+            forms online at <a href="http://http://my.adp.com">http://my.adp.com</a>. You can setup your account on a
+            web browser or by downloading the ADP Mobile App. Instructions for access are at <a
+              href="http://http://wages.fieldworks.com">http://wages.fieldworks.com</a>.</p>
+          <p>A W‐2 form for this year will be postmarked by January 31 of next year. It will be mailed to the address
+            which appears on this form. W2 forms are also available online on the ADP website listed below.</p>
+          <p><strong>ACKNOWLEDGEMENT OF RECEIPT</strong> <br>
+            <span>I have received this document.</span>
+          </p>
         </div>
-        
+
         <div class="flex-wrap gap-3 form-group d-flex justify-content-between" style="margin-top: 7em;">
           <div class="gap-2 d-flex gap-md-4 align-items-end">
             <label class="fw-bold" for="signature">Signature:</label>
-            <input type="text" id="signature" name="signature" class="form-control textfield_underline" />
+            <input type="text" id="signature" name="signature" class="form-control textfield_underline">
           </div>
           <div class="gap-2 d-flex gap-md-4 align-items-end">
             <label class="fw-bold" for="date">Date:</label>
-            <input name="date" id="date" autocomplete="off" type="date" placeholder=""
+            <input name="date" id="date" autocomplete="off" type="date"
               class="form-control textfield_underline input-md" required>
           </div>
         </div>
@@ -111,49 +129,5 @@
     </div>
   </div>
 </body>
-
-<style>
-  .legend-heading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    max-width: 500px;
-  }
-  h2 {
-    margin-top: 2em;
-    margin-bottom: .7em;
-
-  }
-  li {
-    margin-bottom: .7em;
-  }
-
-  #checkboxes div {
-    display: flex;
-    align-items: flex-end;
-    gap: 1em;
-  }
-
-  #checkboxes input {
-    width: 2em;
-  }
-
-  #checkboxes p {
-    margin-top: 3px;
-  }
-
-  input {
-    background: none !important;
-  }
-
-  .list-split {
-    column-count: 2;
-  }
-
-  @media (max-width: 600px) {
-    .list-split {
-      column-count: 1;
-    }
-  }
-</style>
 
 </html>

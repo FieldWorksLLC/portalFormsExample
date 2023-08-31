@@ -33,6 +33,53 @@ div[data-lastpass-icon-root] {
     font-size: 1.2em;
 }
 
+h2 {
+    margin-top: 2em;
+    margin-bottom: .7em;
+
+  }
+  li {
+    margin-bottom: .7em;
+  }
+
+  .acknowledgements div,
+  .acknowledgement {
+    align-items: flex-end;
+    gap: 1em;
+    margin-bottom: 5px;
+  }
+
+  .acknowledgements input,
+  .acknowledgement input {
+    display: inline;
+    width: 2em !important;
+  }
+
+  .acknowledgements label,
+  .acknowledgement label {
+    display: inline;
+    margin-top: 3px;
+    position: relative;
+  }
+
+  input {
+    background: none !important;
+  }
+
+  .list-split {
+    column-count: 2;
+  }
+
+  .list-split li {
+    margin-right: 1em;
+  }
+
+  @media (max-width: 600px) {
+    .list-split {
+      column-count: 1;
+    }
+  }
+
 
 /*sign form form*/
 body.page-sign-form-i9 .container,
@@ -41,7 +88,7 @@ body.page-sign-form-w4 .container
     width: 1320px !important;
 }
 .sign-form legend {
-    padding: 20px;
+    /* padding: 20px; */
 }
 .js-disable-form-fields {
     pointer-events:none;
