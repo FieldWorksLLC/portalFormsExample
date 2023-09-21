@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/government-forms.css">
+
+  <title>A4 Form</title>
+</head>
+
+<body>
+  <form>
+    <div class="container mt-5">
+      <header class="border border-black border-bottom border-top-0 border-start-0 border-end-0 border-3"
+        style="padding-left: 5em;">
+        <div
+          class="d-flex border border-black border-bottom-0 border-start-0 border-end-0 border-2 align-items-stretch">
+          <p class="px-5 bg-black mb-0 text-white text-center"><span>Arizona Form</span><br><span class="fs-3"
+              style="line-height: .6;">A-4</span></p>
+          <h1 class="fs-2 flex-grow-1 text-center align-self-center" style="font-size: 1.5em !important;">Employee’s
+            Arizona Withholding Election</h1>
+          <p class="fs-3 bg-grey fw-bold mb-0 px-5 py-1">2023</p>
+        </div>
+      </header>
+      <main>
+        <p class="fs-5 border-2 border border-black p-3 my-2 fw-bold text-center">Arizona tax rates have decreased. As a
+          result, we are revising withholding percentages and are
+          requiring taxpayers to complete a new Form A-4 for 2023.</p>
+        <div class="border border-black border-2 border-top-0">
+          <div class="d-flex">
+            <div class="input">
+              <label for="full-name" class="p-1">Type or print your Full Name</label>
+              <input type="text" id="full-name" name="full-name" class="px-1">
+            </div>
+            <div class="input">
+              <label for="ssn" class="p-1">Your Social Security Number</label>
+              <input type="text" id="ssn" name="ssn" class="px-1">
+            </div>
+          </div>
+          <div>
+            <div class="input">
+              <label for="address" class="p-1">Home Address – number and street or rural route</label>
+              <input type="text" id="address" name="address" class="px-1">
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="input">
+              <label for="city-town" class="p-1">City or Town</label>
+              <input type="text" id="city-town" name="city-town" class="px-1">
+            </div>
+            <div class="input" style="max-width: 7em;">
+              <label for="state" class="p-1">State</label>
+              <input type="text" id="state" name="state" class="px-1">
+            </div>
+            <div class="input" style="flex-grow: .5">
+              <label for="zip" class="p-1">ZIP Code</label>
+              <input type="text" id="zip" name="zip" class="px-1">
+            </div>
+          </div>
+        </div>
+        <div class="mt-4">
+          <p class="fs-5 fw-bold mb-1">Choose either box 1 or box 2:</p>
+          <div>
+            <div class="d-flex column-gap-3">
+              <div class="">
+                <input type="radio" name="tax-withold" id="tax-withold-gross" value="withold-gross">
+                <label for="tax-withold-gross"><span class="fw-bold">1</span></label>
+              </div>
+              <div class="">
+                <div class="mb-2">
+                  <label for="tax-withold-gross" style="padding: 0;" class="mb-2">Withhold from gross taxable wages at
+                    the percentage checked (check only one percentage):</label>
+                  <div class="d-flex column-gap-5">
+                    <div>
+                      <input type="radio" name="withold-percent" id="withold-point-5">
+                      <label for="withold-1">0.5%</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="withold-percent" id="withold-1">
+                      <label for="withold-1">1.0%</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="withold-percent" id="withold-1-point-5">
+                      <label for="withold-1-point-5">1.5%</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="withold-percent" id="withold-2">
+                      <label for="withold-2">2.0%</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="withold-percent" id="withold-2-point-5">
+                      <label for="withold-2-point-5">2.5%</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="withold-percent" id="withold-3">
+                      <label for="withold-3">3.0%</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="withold-percent" id="withold-3-point-5">
+                      <label for="withold-3-point-5">3.5%</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex column-gap-5 align-items-center">
+                  <input type="checkbox" name="withold-amount" id="withold-amount">
+                  <label for="withold-amount">Check this box and enter an extra amount to be withheld from each paycheck
+                    .................</label>
+                  <div class="d-flex align-items-center">
+                    <span class="pe-2">$</span>
+                    <input type="text" name="withold-dollar" class="border border-black border-2">
+                    <input type="text" name="withold-cent" class="border border-black border-2 border-start-0"
+                      style="width: 3em">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex column-gap-3 mt-3">
+              <input type="radio" name="tax-withold" id="tax-withold-zero" value="withold-zero">
+              <label for="tax-withold-zero"><span class="fw-bold pe-3">2</span> I elect an Arizona withholding
+                percentage of zero, and I certify that I expect to have no Arizona tax liability for the current taxable
+                year.</label>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button type="button" style="background: #aabfff;border-color: #7184bc;"
+            class="d-inline-block px-5 py-1 fw-bold" onclick="window.print()">Print</button>
+        </div>
+        <div class="border border-2 mt-2 border-black">
+          <p class="p-2">I certify that I have made the election marked above.</p>
+
+          <div class="mt-5 d-flex justify-content-between column-gap-5 px-2">
+            <div class="flex-grow-1">
+              <input type="text" name="signature" id="signature" style="width: 100%;border-bottom: 2px solid #000;">
+              <label for="signature">Signature</label>
+            </div>
+            <div class="flex-grow-1">
+              <input type="date" name="date" id="date" style="width: 100%;border-bottom: 2px solid #000;">
+              <label for="date">Date</label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="font-bold border-2 border border-black p-3 text-center"
+            style="font-size: 1.5em !important;border-top-width: 2px !important;">Employee’s Instructions</h2>
+          <div>
+            <article style="column-count: 2; column-gap: 5em;column-rule: 2px solid #000;" class="my-4">
+              <p>Arizona law requires your employer to withhold Arizona income
+                tax from your wages for work done in Arizona. The amount
+                withheld is applied to your Arizona income tax due when you
+                file your tax return. The amount withheld is a percentage of
+                your gross taxable wages from every paycheck. You may
+                also have your employer withhold an extra amount from each
+                paycheck. Complete this form to select a percentage and any
+                extra amount to be withheld from each paycheck.</p>
+              <div>
+                <h3>What are my “Gross Taxable Wages”?</h3>
+                <p>For withholding purposes, your “gross taxable wages” are the
+                  wages that will generally be in box 1 of your federal Form W-2.
+                  It is your gross wages less any pretax deductions, such as your
+                  share of health insurance premiums.</p>
+              </div>
+              <div>
+                <h3>New Employees</h3>
+                <p>Complete this form within the first five days of your employment
+                  to select an Arizona withholding percentage. You may also
+                  have your employer withhold an extra amount from each
+                  paycheck. If you do not give this form to your employer the
+                  department requires your employer to withhold 2.0% of your
+                  gross taxable wages.</p>
+              </div>
+              <div>
+                <h3>Current Employees</h3>
+                <p>If you want to change your current amount withheld, you must
+                  file this form to change the Arizona withholding percentage or
+                  to change the extra amount withheld.</p>
+              </div>
+              <div>
+                <h3>What Should I do With Form A-4?</h3>
+                <p>Give your completed Form A-4 to your employer.</p>
+              </div>
+              <div>
+                <h3>Electing a Withholding Percentage of Zero</h3>
+                <p>You may elect an Arizona withholding percentage of zero
+                  if you expect to have no Arizona income tax liability for the
+                  current year. Arizona tax liability is gross tax liability less any
+                  tax credits, such as the family tax credit, school tax credits, or
+                  credits for taxes paid to other states. If you make this election,
+                  your employer will not withhold Arizona income tax from your
+                  wages for payroll periods beginning after the date you file the
+                  form. To keep this election for the next calendar year, you must
+                  give your employer an updated Form A-4. If you do not, your
+                  employer may withhold Arizona income tax from your wages
+                  and salary until you submit an updated Form A-4.</p>
+                <p>Zero withholding does not relieve you from paying Arizona
+                  income taxes that might be due at the time you file your Arizona
+                  income tax return. If you have an Arizona tax liability when
+                  you file your return or if at any time during the current year
+                  conditions change so that you expect to have a tax liability, you
+                  should promptly file a new Form A-4 and choose a withholding
+                  percentage that applies to you.</p>
+              </div>
+              <div>
+                <h3>Voluntary Withholding Election by Certain
+                  Nonresident Employees</h3>
+                <p>Compensation earned by nonresidents while physically
+                  working in Arizona for temporary periods is subject to Arizona
+                  income tax. However, under Arizona law, compensation paid
+                  to certain nonresident employees is not subject to Arizona
+                  income tax withholding. These nonresident employees need
+                  to review their situations and determine if they should elect to
+                  have Arizona income taxes withheld from their Arizona source
+                  compensation. Nonresident employees may request that their
+                  employer withhold Arizona income taxes by completing this
+                  form to elect Arizona income tax withholding.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+      <footer class="border-2 border-black border border-bottom-0 border-start-0 border-end-0">
+        <p style="font-size: .8em">ADOR 10121 (22)</p>
+      </footer>
+    </div>
+  </form>
+</body>
+
+</html>
