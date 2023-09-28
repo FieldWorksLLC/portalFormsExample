@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$fileToLoad = 'a4-render.html';
+$fileToLoad = 'w9-render.html';
 
 $mpdf = new \Mpdf\Mpdf();
 $stylesheet = file_get_contents('./css/sign-form-pdf.css');
