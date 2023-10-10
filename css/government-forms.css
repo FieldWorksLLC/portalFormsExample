@@ -221,14 +221,14 @@ p.sub-item {
 }
 
 #documents-list td > ol > li,
-#documents-list td > ol > p {
+#documents-list td > ol > div {
   position: relative;
   padding: .4em;
 }
 
 
 #documents-list td > ol > li:not(:last-of-type)::after,
-#documents-list td > ol > p::after {
+#documents-list td > ol > div::after {
   position: absolute;
   bottom: 0;
   left: -2em;
@@ -238,12 +238,12 @@ p.sub-item {
   border-bottom: 1px solid black;
 }
 
-#documents-list td > ol > p  {
+#documents-list td > ol > div  {
   padding-right: 2em;
 }
 
 
-#documents-list td > ol > p::after{
+#documents-list td > ol > div::after {
   left: -1.7em;
   width: calc(100% + 1.8em);
 }
