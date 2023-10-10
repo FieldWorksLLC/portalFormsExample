@@ -211,7 +211,7 @@ p.sub-item {
 }
 
 #documents-list td {
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 0;
   vertical-align: top;
 }
@@ -235,7 +235,7 @@ p.sub-item {
   content: "";
   display: block;
   width: calc(100% + 2em);
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 #documents-list td > ol > p  {
