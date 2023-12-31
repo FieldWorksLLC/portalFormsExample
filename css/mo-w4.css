@@ -1,0 +1,86 @@
+h1 {
+  border-bottom: .1em solid currentColor;
+  margin-bottom: .3em;
+  display: inline-block;
+}
+
+header button {
+  background: #74140C;
+  color: #fff;
+  padding: .1em .75em;
+  font-size: 1.3em;
+}    
+
+legend {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  background: #212529;
+  color: #fff;
+  flex-grow: 0;
+  width: 1.5em;
+  text-align: center;
+  padding: 1em 0;
+  margin-bottom: 0;
+  font-size: 1.1em;
+  transform: rotate(180deg);
+}
+
+#filing-status td {
+  vertical-align: bottom;
+  border: 2px solid #212529;
+  padding: .3em;
+}
+
+#filing-status td:first-child {
+  border: 0 !important;
+}
+
+#filing-status td.mid {
+  padding: .5em 1em;
+}
+
+#filing-status ol {
+  margin-bottom: 0;
+  padding-left: 1em;
+}
+
+#other-info, footer {
+  border-top: 2px solid #212529;
+  margin-top: 1em;
+}
+#other-info h2 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#other-info p {
+  margin-bottom: .3em;
+}
+#other-info ul {
+  padding-left: 1em;
+  margin-bottom: .3em;
+}
+#other-info li {
+  padding-left: 1.5em;
+}
+
+footer  {
+  padding-top: .1em;
+}
+
+footer table {
+  width: 700px;
+}
+
+footer table td {
+  vertical-align: top;
+}
+
+footer td:first-child {
+  padding-right: 2em;
+  min-width: 90px;
+}
+
+footer address {
+  margin-bottom: 0;
+}
