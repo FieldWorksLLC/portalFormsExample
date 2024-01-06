@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
-$fileToLoad = 'mow4-render.html';
+$fileToLoad = 'nc4-render.html';
 
 $mpdf = new \Mpdf\Mpdf();
 $mpdf->WriteHTML(file_get_contents($fileToLoad));
