@@ -7,7 +7,7 @@
   <title>NC4</title>
   <style>
     body {
-      font-size: 11px;
+      font-size: 10px;
     }
 
     table {
@@ -43,7 +43,17 @@
       padding: 1em 0;
       border-bottom: 1px solid #000;
       width: 5em;
+      background-image: url('https://i.ibb.co/djk1wg0/bars.png');
+      background-position: 0% bottom;
+      background-repeat: repeat-x;
+      /* background-size: 10px;  */
     }
+
+    td.input.one {
+      width: 1em;
+    }
+
+    
   </style>
 </head>
 
@@ -146,6 +156,7 @@
         <strong>Total number of allowances you are claiming</strong><br>
         <span class="font-weight-normal"><i>(Enter zero (0), or the number of allowances from Page 2, Line 17 of the NC-4 Allowance Worksheet)</i></span>
       </td>
+      <td style="width: 7.4em;"></td>
       <td class="input"></td>
       <td style="width: 3em;"></td>
     </tr>
@@ -156,10 +167,10 @@
       <td>
         <strong>Additional amount, if any, withheld from each pay period</strong><span><i>(Enter whole dollars)</i></span>
       </td>
-      <td class="input" style="width: 10em;">
+      <td class="input" style="width: 14.6em;" colspan="2">
 
       </td>
-      <td>
+      <td style="font-size: 1.7em; font-weight: 700;vertical-align: bottom;">
         .00
       </td>
     </tr>
@@ -168,13 +179,13 @@
   <div style="border: 1px solid #000; margin-top: 2em;padding: .4em">
     <table style="border-spacing: 10em;border-collapse: separate;border-spacing: 2px;">
       <tr>
-        <td class="input" style="width: 20em;border-right: 2em solid #fff">
+        <td class="input" style="width: 28.3em;border-right: 2em solid #fff">
           Social Security Number
         </td>
         <td style="border: 1px solid #000;">
-          <table  style="margin-left: 2em;">
+          <table  style="">
             <tr>
-              <td>Filing Status</td>
+              <td style="font-weight: bold;background: #fff;transform: translateY(-1em);">Filing Status</td>
             </tr>
             <tr>
               <td>
@@ -193,9 +204,9 @@
     </table>
     <table style="border-spacing: 3em;">
       <tr>
-        <td class="input" style="padding-bottom: 3em;border-right: 3em solid #Fff;">First Name <small><i>(USE CAPITAL LETTERS FOR YOUR NAME AND ADDRESS)</i></small></td>
-        <td class="input" style="padding-bottom: 3em;border-right: 3em solid #Fff;">M.I.</td>
-        <td class="input" style="padding-bottom: 3em;">Last Name</td>
+        <td class="input" style="padding-bottom: 3em;border-right: 3em solid #Fff;width: 25em;">First Name <small><i>(USE CAPITAL LETTERS FOR YOUR NAME AND ADDRESS)</i></small></td>
+        <td class="input one" style="padding-bottom: 3em;border-right: 3em solid #Fff;">M.I.</td>
+        <td class="input" style="padding-bottom: 3em; width: 20em;">Last Name</td>
       </tr>
     </table>
     <table style="border-spacing: 3em;">
@@ -206,9 +217,9 @@
     </table>
     <table>
       <tr>
-        <td class="input" style="padding-bottom: 3em;border-right: 3em solid #Fff; width: 30em;">City</td>
-        <td class="input" style="padding-bottom: 3em;border-right: 3em solid #Fff; width: 5em;">State</td>
-        <td class="input" style="padding-bottom: 3em;border-right: 3em solid #Fff; width: 10em;">Zip Code <small><i>5 Digit</i></small></td>
+        <td class="input" style="padding-bottom: 3em;border-right: 3em solid #Fff; width: 30em;">City <div class="line"></div></td>
+        <td class="input two" style="padding-bottom: 3em;border-right: 3em solid #Fff; width: 5em;">State</td>
+        <td class="input five" style="padding-bottom: 3em;border-right: 3em solid #Fff; width: 13em;">Zip Code <small><i>5 Digit</i></small></td>
         <td class="input" style="padding-bottom: 3em;width: 15em;">Country <small><i>(If not U.S.)</i></small></td>
       </tr>
     </table>
@@ -221,7 +232,7 @@
         <td style="width: 10em; border-bottom: 1px solid #000;"></td>
       </tr>
     </table>
-    <p style="margin-top: 0;"><small>I certify, under penalties provided by law, that I am entitled to the number of withholding allowances claimed on Line 1 above.</small></p>
+    <p style="margin-top: 0;font-size: .9em;">I certify, under penalties provided by law, that I am entitled to the number of withholding allowances claimed on Line 1 above.</p>
   </div>
 </body>
 
