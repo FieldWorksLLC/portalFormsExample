@@ -1,0 +1,112 @@
+body{
+width: 1280px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 20px;
+}
+.small-heading-1 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.small-heading-2 {
+   text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.small-heading-3 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.large-heading-1 {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.form_title {
+    text-align: center;
+    position: absolute;
+    margin-left: 50px;
+}
+.dot-line{
+    border: none;
+    border-top: 5px dotted black;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+#name1 {
+    border: none;
+    text-align: left;
+}
+#street_address {
+    border-right: none;
+}
+.table {
+    border: 2px solid black;
+}
+input {
+    width: 50%;
+}
+
+#line9, #line10, #a1, #b1, #c1, #2 {
+    width: 100%
+}
+#cell1 {
+    width: 30%;
+}
+.cell3_input {
+    width: 300px;
+}
+.cb {
+    width: 30px;
+    height: 30px;
+}
+.line1, .line2, .line3, .line3-1, .line4, .line6, .breaker-line-1, .breaker-line-2, .line9, .line10 {
+    margin-left: 10px;
+    font-size: small;
+}
+.line3-1, .line1-2 {
+    margin-left: 25px;
+    font-size: small;
+}
+.a, .b, .c{
+    margin-left: 30px;
+    font-size: small;
+}
+.a-text, .b-text, .c-text {
+    margin-left: 20px;
+    font-size: small;
+}
+.table-header {
+    margin-left: 50px;
+    text-align: center;
+}
+.cut-line{
+    text-align: center;
+    font-size: smaller;
+    margin: 65px 0 0 0;
+}
+.foot-sig-pad {
+    margin: 3rem  0;
+    margin-bottom: 0;
+}
+.foot-sig{
+    font-size: smaller;
+    margin: 0;
+}
+.foot-sig-date{
+    margin-left: 996px;
+}
+.foot-sig-text {
+    font-size: small
+}
+.form-1{
+    margin-left: 30px;
+}
+.big_input {
+    width: 100%;
+}
+
