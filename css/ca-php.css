@@ -1,0 +1,27 @@
+.table-1{
+    border: 1px solid black;
+}
+.cell-1-1{
+    border-bottom: 0;
+    width: 30%;
+}
+.cell-1-2{
+    border-bottom: 1px solid black;
+}
+.cell-2-2{
+    border-bottom: 0;
+    width: 0%;
+}
+.cell-2-3{
+    border-bottom: 1px solid black
+}
+/*#employee-sig{*/
+/*    width: 100%;*/
+/*}*/
+/*#date{*/
+/*    width: 50%;*/
+/*}*/
+input, .border-none {
+    border: none !important;
+    border-bottom: 1px solid black;
+}
