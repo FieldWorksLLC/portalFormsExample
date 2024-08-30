@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EDD Form</title>
+  <link rel="stylesheet" href="/css/forms.css">
+  <link rel="stylesheet" href="/css/sign-form-pdf.css">
+  <link rel="stylesheet" href="/css/sign-form.css">
+  <link href="/css/bootstrap5/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/ca.css" />
+</head>
+
+<body>
+<img class="title-img" alt="edd logo" src="https://bloximages.newyork1.vip.townnews.com/ledger.news/content/tncms/assets/v3/editorial/4/04/4040b324-b869-11ed-adf0-cb0744eda55e/63ffaae96aad2.image.png" />
+<h1 class="title"><strong>Employee's Withholding Allowance Certificate</strong></h1>
+
+<main>
+  <form class="form-1">
+  <p class="table-text">Complete this form so that your employer can withhold the correct California state income tax from your paycheck.</p>
+  <div class="container cont-1">
+    <table class="table table-bordered table-sm table-3">
+      <thead>
+      <tr>
+        <th class="cell-1">
+          <strong>Enter Personal Information</strong>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="cell-2">
+          <label class="form-label" for="first-middle-last-name">First, Middle, Last Name</label>
+          <div>
+            <input class="input-1" name="first-middle-last-name" id="first-middle-last-name" type="text" />
+          </div>
+        </td>
+        <td class="cell-3">
+          <label class="form-label" for="ssn">Social Security Number</label>
+          <div>
+            <input class="input-2" name="ssn" id="ssn" type="text" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="cell-4">
+          <label class="form-label" for="address">Address</label>
+          <div>
+            <input class="input-1" name="address" id="address" type="text" />
+          </div>
+          <table class="table-2 table table-borderless table-sm">
+            <tr>
+              <td class="cell-5">
+                <label for="city">City</label>
+                <div>
+                  <input class="input-5" id="city" name="city" type="text">
+                </div>
+              </td>
+              <td class="cell-6">
+                <label for="state">State</label>
+                <div>
+                  <input class="input-6" id="state" name="state" type="text" />
+                </div>
+              </td>
+              <td class="cell-7">
+                <label for="zip-code">Zip Code</label>
+                <div>
+                  <input class="input-7" id="zip-code" name="zip-code" type="text" />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          Filling Status
+          <div>
+            <input name="married-single" id="married-single" type="checkbox" /><span class="span-1"><label for="married-single">Single or Married (with two or more incomes)</label></span>
+          </div>
+          <div>
+            <input name="married" id="married" type="checkbox" /><span class="span-1" ><label for="married">Married (one income)</label></span>
+          </div>
+          <div>
+            <input name="head" id="head" type="checkbox" /><span class="span-1"><label for="head">Head of Household</label></span>
+          </div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+    <p>1. <span class="line-1">Use Worksheet A for Regular Withholding allowances. Use other worksheets on the following pages as applicable </span></p>
+    <label class="line-2" for="number-regular-withholding">1a.<span class="line-1">Number of Regular Withholding Allowances(<strong>Worksheet A</strong>, if applicable)</span></label><span><input name="number-regular-withholding" id="number-regular-withholding" type="text" /></span>
+    <label class="line-2" for="number-allowances-deductions">1b.<span class="line-1">Number of allowances from the Estimated Deductions(<strong>Worksheet B</strong>)</span></label><span><input name="number-allowances-deductions" id="number-allowances-deductions" type="text" /></span>
+    <div><label class="line-2" for="total-number-allowances">1c.<span class="line-1">Total Number of Allowances you are claiming</span></label><span><input id="total-number-allowances" name="total-number-allowances" type="text" /></span></div>
+    <p class="line-1-p">2. <span class="line-1">Additional amount, if any, you want withheld each pay period (if employer agrees).<strong>(Worksheet C)</strong>
+      OR</span></p>
+    <h4 class="line-3">Exemption from Withholding</h4>
+    <label for="claim-exemption-meet-conditions">3. <span class="line-1">I claim exemption from withholding for 2024, and I certify I meet both of the conditions for exemption OR</span><span class="line-4">(Check box here)</span></label>
+    <div></div>
+    <span class="line-4-1"><input id="claim-exemption-meet-conditions" name="claim-exemption-meet-conditions" type="checkbox"/></span>
+    <label for="not-subject-withholding-under-penalty">4. <span class="line-1">I certify under penalty of perjury that I am <strong>not subject</strong> to California withholding. I meet the conditions set
+    forth under the<br> <span class="line-1-1">Service Member Civil Relief Act, as amended by the Military Spouses Residency Relief Act
+        and the veterans Benefits and Transition </span><span class="line-5">(Check box here)</span></span></label>
+    <div></div>
+    <span class="line-5-1"><input id="not-subject-withholding-under-penalty" name="not-subject-withholding-under-penalty" type="checkbox"/></span>
+
+    <hr class="hr-1">
+    <p class="line-6">Under the penalties of perjury, I certify that the number of withholding allowances claimed on this certificate does not exceed the
+    number to which I am entitled or, if claiming exemption from withholding, that I am entitled to the claim the exempt status</p>
+
+    <table class=" table-3 table-100 table-3">
+      <tr>
+        <td class="cell-1-1">
+          <label for="employee-sig">Employee's Signature</label>
+        </td>
+        <td class="cell-1-2">
+          <input id="employee-sig" name="employee-sig" type="text" />
+        </td>
+        <td class="cell-2-2">
+          <label for="date">Date</label>
+        </td>
+        <td class="cell-2-3">
+          <input id="date" name="date" type="number" />
+        </td>
+      </tr>
+    </table>
+
+    <div class="container">
+      <table class=" table-100 table-bordered">
+        <tbody>
+        <tr>
+          <td class="cell-8">
+            <label for="employer-name-address"><strong>Employer's Section:</strong> Employer's Name and Address</label>
+            <div>
+              <input class="input-8" id="employer-name-address" name="employer-name-address" type="text" />
+            </div>
+          </td>
+          <td>
+            <label  class="cell-9" for="employer-payroll-tax-number">California Employer Payroll Tax Account Number</label>
+            <div>
+              <input class="input-8" id="employer-payroll-tax-number" name="employer-payroll-tax-number" type="text" />
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <strong>Purpose:</strong> The <i>Employee’s Withholding Allowance Certificate</i> (DE 4) is for <strong>California Personal Income Tax (PIT)</strong> withholding purposes only. The DE 4 is used to compute the amount of taxes to be withheld from your wages, by your employer, to accurately reflect your state tax withholding obligation.
+          <div class="par-1">
+            Beginning January 1, 2020, <i>Employee's Withholding Allowance Certificate</i> (Form W-4) from the Internal Revenue Service (IRS) will be used for federal income tax withholding <strong>only</strong>. You must fle the state form DE 4 to determine the appropriate California PIT withholding.
+          </div>
+          <div class="par-2">
+            If you do not provide your employer with a DE 4, the employer must use Single with Zero withholding allowance.
+          </div>
+          <div class="par-3">
+            <strong>Check Your Withholding:</strong> After your DE 4 takes effect, compare the state income tax withheld with your estimated total annual tax. For state withholding, use the worksheets on this form.
+          </div>
+          <div class="par-4">
+            <strong>Exemption From Withholding:</strong> If you wish to claim exempt, complete the federal Form W-4 and the state DE 4. You may claim exempt from withholding California income tax if you meet both of the following conditions for exemption:
+          </div>
+          <div class="par-5">
+            DE 4 REV. 53 (12-23)<strong>(INTERNET)</strong>
+          </div>
+        </div>
+        <div class="col-6">
+            1. <span class="i-1">You did not owe any federal/state income tax last year, and</span>
+          <div class="par-1">
+            2. <span class="i-1">You do not expect to owe any federal/state income tax this year. The <span class="i-1-1">exemption is good for one year.</span></span>
+          </div>
+          <div class="par-2">
+            If you continue to qualify for the exempt fling status, a new DE 4 designating <strong>exempt</strong> must be submitted by February 15 each year to continue your exemption. If you are not having federal/state income tax withheld this year but expect to have a tax liability next year, you are required to give your employer a new DE 4 by December 1.
+          </div>
+          <div class="par-3">
+            <strong>Member Service Civil Relief Act:</strong> Under this act, as provided by the Military Spouses Residency Relief Act and the Veterans Benefits and Transition Act of 2018, you may be exempt from California income tax withholding on your wages if
+          </div>
+          <div class="">
+            (i) <span class="i-1">Your spouse is a member of the armed forces present in California in <span class="i-1-1">compliance with military orders;</span></span>
+          </div>
+          <div class="">
+            (ii) <span class="i-2">You are present in California solely to be with your spouse; and</span>
+          </div>
+          <div class="">
+            (iii) <span class="i-3"> You maintain your domicile in another state</span>
+          </div>
+          <div class="par-2">
+            If you claim exemption under <strong>this</strong> act, <strong>check the box on Line 4.</strong> You may be required to provide proof of exemption upon request.
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</main>
+</body>
+</html>

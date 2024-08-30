@@ -1,0 +1,182 @@
+body{
+    width: 1280px;
+}
+.hr-1{
+    border: 2px solid black;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+.title {
+    font-size: 25px;
+    margin-left: 400px;
+}
+.title-img{
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.form-1{
+    margin-left: 50px;
+}
+.table-text {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+table{
+    margin-left: 1px;
+    width: 100%;
+}
+.table-bordered{
+    border: 1px black solid;
+}
+.cell-1{
+    border-right: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.cell-2{
+    border-right: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+.cell-3{
+    width: 50%;
+}
+.cell-4{
+    border-bottom: 1px black solid;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px black solid;
+    margin-left: 10px;
+}
+.cell-5{
+    width: 50%;
+    border-top: none;
+}
+.cell-6{
+    width: 25%;
+    border-top: none;
+}
+.cell-7{
+    width: 25%;
+    border-top: none;
+}
+.cell-8{
+    width: 40%;
+    margin-bottom: 100px;
+}
+.cell-9{
+    width: 60%;
+}
+.input-1{
+    width: 100%;
+}
+.input-2{
+    width: 100%;
+}
+.input-5{
+    border: none;
+    width: 100%;
+}
+.input-6{
+    border: none;
+    width: 100%;
+}
+.input-7{
+    border: none;
+    width: 100%;
+}
+.input-8{
+    width: 100%;
+    margin-bottom: 70px;
+}
+.input-9{
+    width: 100%;
+}
+input{
+    border: none;
+}
+.span-1{
+    margin-left: 10px;
+}
+.line-1{
+    margin-left: 10px;
+}
+.line-1-1{
+    margin-left: 10px;
+}
+.line-1-p{
+    margin-bottom: 0;
+}
+.line-2{
+    margin-left: 30px;
+}
+.line-3{
+    font-size: 19px;
+    margin-bottom: 0;
+}
+.line-4{
+    margin-left: 300px;
+}
+.line-4-1{
+    margin-left: 1145px;
+    width: 10px;
+}
+.line-5{
+    margin-left: 139px;
+}
+.line-5-1{
+    margin-left: 1145px;
+    margin-bottom: 0;
+}
+.line-6{
+    margin-top: 0;
+    padding-top: 0;
+}
+.cell-1-1{
+    border-bottom: 0;
+    width: 15%;
+}
+.cell-1-2{
+    border-bottom: 1px solid black;
+}
+#employee-sig{
+    width: 1000%;
+    /*border-bottom: 1px solid black*/
+}
+#date{
+    width: 100%;
+    /*border-bottom: 1px black solid;*/
+}
+.cell-2-2{
+    border-bottom: 0;
+    width: 0;
+}
+.cell-2-3{
+    border-bottom: 1px solid black
+}
+.table-3{
+    margin-left: 0;
+}
+.par-1, .par-2, .par-3, .par-4 {
+    margin-top: 15px;
+}
+.par-5{
+    margin-top:35px;
+    margin-bottom: 35px;
+}
+.i-1{
+    margin-left: 16px;
+}
+.i-1-1{
+    margin-left: 35px;
+}
+.i-2{
+    margin-left: 13px;
+}
+.i-3{
+    margin-left: 10px;
+}
